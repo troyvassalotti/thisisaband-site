@@ -6,6 +6,6 @@
     "twitter_handle": "validcharacters",
     "github_handle": "troyvassalotti"
   },
-  "background_color": "var(--blue-1)",
-  "text_color": "var(--black-2)"
+  "background_color": "#BFCDF9",
+  "text_color": "#313131"
 }
