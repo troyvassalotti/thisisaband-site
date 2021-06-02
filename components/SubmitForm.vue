@@ -5,10 +5,10 @@
     <p>Include as much information as you'd like in the submission box. Write your story, include a link to a video or song, etc. Please don't write a novel.</p>
     <form class="submission" method="POST" name="Band Submission" netlify netlify-honeypot="bot-field">
       <label style="display: none;">Don’t fill this out: <input name="bot-field"></label>
-      <label for="name">Name (optional)<input name="name" type="text" id="name" placeholder='Cool Person'></label>
-      <label for="email">Email (optional)<input name="email" type="email" id="email" placeholder='you@are.cool'></label>
-      <label for="submission">Submission<textarea name="submission" id="submission" required placeholder="Please don't write a novel."></textarea></label>
-      <input type="submit" value="Submit" id="submit">
+      <label for="name">Name (optional)<input id='name' name='name' placeholder='Cool Person' type='text'></label>
+      <label for="email">Email (optional)<input id="email" name="email" type="email" placeholder='you@are.cool'></label>
+      <label for="submission">Submission<textarea id="submission" name="submission" required placeholder="Please don't write a novel."></textarea></label>
+      <input id="submit" type="submit" value="Submit">
     </form>
   </section>
 </template>
