@@ -1,11 +1,11 @@
-import path from "path";
+import path from 'path';
 /* eslint-disable */
 const glob = require('glob');
-const config = require("./content/data/config.json")
+const config = require('./content/data/config.json');
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/blog': 'content/blog-posts/*.md',
- });
+  '/blog': 'content/blog-posts/*.md'
+});
 
 export default {
   mode: 'universal',
@@ -23,7 +23,10 @@ export default {
         content: config.description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' }]
   },
   /*
    ** Customize the progress-bar color
@@ -32,7 +35,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/styles/reset.scss', '@/assets/styles/global.scss'],
+  css: ['@/assets/styles/modern-reset.scss', '@/assets/styles/global.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -55,19 +58,19 @@ export default {
     /*
      ** Using frontmatter-markdown-loader here to parse md files
      */
-    extend(config, ctx) {  
+    extend(config, ctx) {
       config.module.rules.push(
-      {
+        {
           test: /\.md$/,
-          loader: "frontmatter-markdown-loader",
-          include: path.resolve(__dirname, "content/blog-posts")
-      })
-    }    
+          loader: 'frontmatter-markdown-loader',
+          include: path.resolve(__dirname, 'content/blog-posts')
+        });
+    }
   },
   generate: {
     routes: dynamicRoutes
   }
-}
+};
 /**
  * Create an array of URLs from a list of files
  * @param {*} urlFilepathTable
@@ -81,7 +84,7 @@ function getDynamicPaths(urlFilepathTable) {
       const routes = glob
         .sync(filepathGlob)
         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
-      return routes
+      return routes;
     })
   );
 }

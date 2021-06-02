@@ -1,22 +1,25 @@
 .info_blurb {
-    max-width: 800px;
-    padding: 1.5rem 1.25rem;
-    p, h2 {
-      color: inherit;
-    }
-    p {
-      font-size: 1.4rem;
-    }
+  max-width: 800px;
+  padding: 1.5rem 1.25rem;
+  color: inherit;
+
+  h2 {
+    margin-bottom: revert;
   }
-  
-  @media (min-width: 768px) {
-    .info_blurb {
-      padding: 2rem;
-    }
+
+  a {
+    text-decoration: underline;
   }
-  
-  @media(min-width: 1440px) {
-    .info_blurb {
-      padding: 3rem;
-    }
+}
+
+@media (min-width: 768px) {
+  .info_blurb {
+    padding: 2rem;
   }
+}
+
+@media(min-width: 1440px) {
+  .info_blurb {
+    padding: 3rem;
+  }
+}

@@ -1,143 +1,171 @@
 .blog {
   h1 {
-      margin-bottom: 0.7rem;
+    margin-block-end: 0.7rem;
   }
-}
 
-.blog__hero {
-  overflow: hidden;
-  min-height: 300px;
-  height: 60vh;
-  width: 100%;
-  margin: 0;
-  img {
+  .blog__hero {
+    overflow: hidden;
+    min-height: 300px;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+
+    img {
       min-width: 100%;
       min-height: 100%;
-      margin-bottom: 0;
+      margin-block-end: 0;
       object-fit: cover;
+    }
   }
-}
 
-.blog__info {
-  text-align: center;
-  padding: 1.5rem 1.25rem;
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-  h1 {
-      margin-bottom: 0.66rem;
+  .blog__info {
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+
+    h2 {
+      margin-block-end: revert;
+    }
+
+    h3 {
+      margin-block-end: 0;
+    }
   }
-  h3 {
+
+  .blog__body {
+    width: 100%;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      text-decoration: underline;
+    }
+
+    &:last-child {
       margin-bottom: 0;
-  }
-}
+    }
 
-.blog__body {
-  width: 100%;
-  padding: 0 1.25rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  a {
-      padding-bottom: 1.45rem;
-  }
-  &:last-child {
-    margin-bottom: 0;
-  }
-  h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
       padding: 1.5rem 1rem;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-  }
-  p {
-      color: #464646;
+      margin-block-end: 1.5rem;
+    }
+
+    p {
       font-weight: normal;
+
       img {
-          margin-top: 1rem;
-          margin-bottom: 1rem;
+        margin-block: {
+          start: 1rem;
+          end: 1rem;
+        }
       }
+    }
   }
-  ul {
-      list-style: initial;
-  }
-  ul, ol {
-      margin-left: 1.25rem;
-      margin-bottom: 1.25rem;
-      padding-left: 1.45rem;
+
+  .blog__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2, p {
+      margin-block-end: 0;
+    }
+
+    a {
+      svg {
+        width: 20px;
+      }
+    }
   }
 }
 
-.blog__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1.25rem;
+.video-embed {
+  display: block;
+  margin-block-end: clamp(1ex, 5vw, 6ex);
+  contain: content;
+  position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  h2 {
-      margin-bottom: 0;
-  }
-  a {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      svg {
-      width: 20px;
-      }
+}
+
+.video-embed::after {
+  content: "";
+  display: block;
+  padding-block-end: calc(100% / (16 / 9));
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+blockquote {
+  border-left: 1px solid #000;
+
+  p {
+    margin: 0;
+    padding: 1rem;
   }
 }
 
 @media (min-width: 768px) {
   .blog {
-      display: flex;
-      flex-direction: column;
-  }
-  .blog__body {
+    display: block;
+
+    .blog__body {
       max-width: 800px;
       padding: 0 2rem;
-      h1, h2, h3, h4, h5, h6 {
-        padding: 1.5rem;
     }
-      span {
-      width: 100%;
-      margin: 1.5rem auto;
-      }
-      ul, ol {
-      margin-left: 1.5rem;
-      margin-bottom: 1.5rem;
-      }
-  }
-  .blog__hero {
+
+    .blog__hero {
       min-height: 600px;
       height: 75vh;
+
       img {
-      min-width: 100%;
+        min-width: 100%;
       }
-  }
-  .blog__info {
+    }
+
+    .blog__info {
       text-align: center;
       padding: 2rem 0;
+
       h1 {
-      max-width: 500px;
-      margin: 0 auto 0.66rem auto;
+        max-width: 500px;
+        margin: 0 auto 0.66rem auto;
       }
-  }
-  .blog__footer {
+    }
+
+    .blog__footer {
       padding: 2.25rem;
+    }
   }
 }
 
 @media (min-width: 1440px) {
-  .blog__hero {
+  .blog {
+    .blog__hero {
       height: 70vh;
-  }
-  .blog__info {
+    }
+
+    .blog__info {
       padding: 3rem 0;
-  }
-  .blog__footer {
-      padding: 2rem 2rem 3rem 2rem;
+    }
+
+    .blog__footer {
+      padding: 2rem;
+    }
   }
 }

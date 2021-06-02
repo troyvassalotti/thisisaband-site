@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
 // layouts ------------------------
+@import './variables.scss';
 @import './layouts/layout.scss';
 //pages ----------------------------
 @import './pages/info.scss';
@@ -8,12 +9,8 @@
 @import './components/header.scss';
 @import './components/bloglist.scss';
 
-
 body {
-  font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif;
-  overflow-x: hidden;
-  color: #000;
-  font-size: 16px;
+  font-family: "Public Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a {
@@ -27,70 +24,33 @@ a:hover {
   opacity: .5;
   text-decoration-color: inherit;
 }
-ul {
-  list-style: none;
-  margin: 0;
-}
 
 //TYPOGRAPHY-------------------------------------
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "Work Sans","Helvetica Neue", Helvetica, sans-serif;
-}
-
-h1, h2 {
-  font-weight: 500;
+  font-family: "Public Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 2rem;
-  letter-spacing: -1px;
-  line-height: 1.1875;
 }
 
 h2 {
   font-size: 1.7rem;
-  letter-spacing: -.75px;
-  line-height: 1.2;
 }
 
 h3 {
   font-size: 1.2rem;
-  letter-spacing: -.5px;
-  line-height: 1.1875;
-  color: #A0A0A0;
-  font-weight: normal;
 }
 
 p {
   font-size: 1.2rem;
-  letter-spacing: -.5px;
-  line-height: 1.5;
-  color: #464646;
+  color: var(--text-color);
 }
 
 @media (min-width: 1280px) {
-
-  h1 {
-    font-size: 2rem;
-    letter-spacing: -1px;
-    line-height: 1.1875;
-  }
-  
   h2 {
     font-size: 1.5rem;
-    letter-spacing: -.75px;
-    line-height: 1.1667;
-  }
-  
-  h3 {
-    letter-spacing: -.5px;
-    line-height: 1.1875;
-    color: #A0A0A0;
-    font-weight: normal;
-  }
-
-  p {
-    line-height: 1.4375;
   }
 }
