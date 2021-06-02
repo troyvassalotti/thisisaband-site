@@ -29,5 +29,3 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
-pages:
-- content/blog-posts/the-geneology-of-morals.md
