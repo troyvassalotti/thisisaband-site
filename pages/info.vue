@@ -20,12 +20,18 @@
         </p>
       </li>
     </ul>
+    <SubmitForm />
   </main>
 </template>
 
 <script>
+import SubmitForm from '~/components/SubmitForm.vue';
+
 export default {
   layout: 'layout',
+  components: {
+    SubmitForm
+  },
   computed: {
     isInfoPage() {
       return this.$nuxt._route.name === 'info' && true;
@@ -51,3 +57,30 @@ export default {
 };
 </script>
 
+<style scoped lang='scss'>
+.info_blurb {
+  max-width: 800px;
+  padding: 1.5rem 1.25rem;
+  color: inherit;
+
+  h2 {
+    margin-bottom: revert;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .info_blurb {
+    padding: 2rem;
+  }
+}
+
+@media(min-width: 1440px) {
+  .info_blurb {
+    padding: 3rem;
+  }
+}
+</style>

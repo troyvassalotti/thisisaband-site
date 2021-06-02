@@ -22,3 +22,18 @@ export default {
 };
 </script>
 
+<style scoped lang='scss'>
+.layout {
+
+  &.info_page {
+    color: #EBEBEB;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+  }
+}
+</style>

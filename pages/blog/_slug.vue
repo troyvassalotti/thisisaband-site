@@ -83,3 +83,154 @@ export default {
   }
 };
 </script>
+
+<style scoped lang='scss'>
+.blog {
+  h1 {
+    margin-block-end: 0.7rem;
+  }
+
+  .blog__hero {
+    overflow: hidden;
+    min-height: 300px;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+      margin-block-end: 0;
+      object-fit: cover;
+    }
+  }
+
+  .blog__info {
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+
+    h2 {
+      margin-block-end: revert;
+    }
+
+    h3 {
+      margin-block-end: 0;
+    }
+  }
+
+  .blog__body {
+    width: 100%;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+      padding: 1.5rem 1rem;
+      margin-block-end: 1.5rem;
+    }
+
+    p {
+      font-weight: normal;
+
+      img {
+        margin-block: {
+          start: 1rem;
+          end: 1rem;
+        }
+      }
+    }
+  }
+
+  .blog__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2, p {
+      margin-block-end: 0;
+    }
+
+    a {
+      svg {
+        width: 20px;
+      }
+    }
+  }
+}
+
+blockquote {
+  border-left: 1px solid #000;
+
+  p {
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog {
+    display: block;
+
+    .blog__body {
+      max-width: 800px;
+      padding: 0 2rem;
+    }
+
+    .blog__hero {
+      min-height: 600px;
+      height: 75vh;
+
+      img {
+        min-width: 100%;
+      }
+    }
+
+    .blog__info {
+      text-align: center;
+      padding: 2rem 0;
+
+      p {
+        margin-block-end: 0;
+      }
+    }
+
+    .blog__footer {
+      padding: 2.25rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .blog {
+    .blog__hero {
+      height: 70vh;
+    }
+
+    .blog__info {
+      padding: 3rem 0;
+    }
+
+    .blog__footer {
+      padding: 2rem;
+    }
+  }
+}
+</style>

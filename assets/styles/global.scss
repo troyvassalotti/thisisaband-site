@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans&display=swap');
-// layouts ------------------------
-@import './variables.scss';
-@import './layouts/layout.scss';
-//pages ----------------------------
-@import './pages/info.scss';
-@import './pages/blog/blog.scss';
-// components ------------------------
-@import './components/header.scss';
-@import './components/bloglist.scss';
+
+html {
+  --black-1: #464646;
+  --black-2: #313131;
+  --light-gray: #A0A0A0;
+  --light-gray-2: #EBEBEB;
+  --blue-1: #BFCDF9;
+  --border-color: var(--light-gray-2, #EBEBEB);
+  --text-color: var(--black-1, #464646);
+}
 
 body {
   font-family: "Public Sans", "Helvetica Neue", Helvetica, sans-serif;
@@ -27,7 +28,7 @@ a:hover {
 
 //TYPOGRAPHY-------------------------------------
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Public Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -47,6 +48,28 @@ h3 {
 p {
   font-size: 1.2rem;
   color: var(--text-color);
+}
+
+.video-embed {
+  display: block;
+  margin-block-end: clamp(1ex, 5vw, 6ex);
+  contain: content;
+  position: relative;
+  width: 100%;
+}
+
+.video-embed::after {
+  content: "";
+  display: block;
+  padding-block-end: calc(100% / (16 / 9));
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 1280px) {
