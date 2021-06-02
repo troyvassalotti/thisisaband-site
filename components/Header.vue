@@ -23,7 +23,7 @@ export default {
   },
   computed: {
     infoRoute() {
-      return this.isInfoPage ? '/' : '/info';
+      return this.isInfoPage ? '/' : '/info/';
     }
   }
 };
