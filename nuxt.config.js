@@ -21,6 +21,22 @@ export default {
         hid: 'description',
         name: 'description',
         content: config.description || ''
+      },
+      {
+        name: "twitter:title",
+        content: config.title || ''
+      },
+      {
+        name: "twitter:description",
+        content: config.description || ''
+      },
+      {
+        name: "twitter:image",
+        content: "/android-chrome-512x512.png"
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image"
       }
     ],
     link: [{ rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },

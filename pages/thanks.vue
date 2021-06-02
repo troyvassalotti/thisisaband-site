@@ -13,7 +13,20 @@
 <script>
 export default {
   layout: 'layout',
-  name: 'thanks'
+  data() {
+    return {
+      title: 'thanks'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: {
+        name: 'robots',
+        content: 'noindex nofollow'
+      }
+    }
+  }
 };
 </script>
 

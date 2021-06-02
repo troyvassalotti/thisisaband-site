@@ -25,7 +25,18 @@
 <script>
 export default {
   layout: 'layout',
+  data() {
+    return {
+      slug: this.$route.params.slug
+    }
+  },
   computed: {
+    formattedTitle() {
+      const words = this.slug.split("-");
+      return words.map(function(word) {
+        return word.charAt(0).toUpperCase() + word.substring(1).toLowerCase();
+      }).join(' ');
+    },
     formattedDate() {
       return new Date(this.post.attributes.date).toDateString().slice(4);
     },
@@ -79,6 +90,11 @@ export default {
     } catch (err) {
       console.debug(err);
       return false;
+    }
+  },
+  head() {
+    return {
+      title: 'This is ' + this.formattedTitle
     }
   }
 };

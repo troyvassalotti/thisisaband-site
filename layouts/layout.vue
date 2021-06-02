@@ -11,6 +11,16 @@
 import Header from '~/components/Header.vue';
 
 export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.thisisa.band' + this.$route.path
+        }
+      ]
+    }
+  },
   components: {
     Header
   },

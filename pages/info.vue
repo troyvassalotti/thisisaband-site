@@ -37,6 +37,12 @@ export default {
       return this.$nuxt._route.name === 'info' && true;
     }
   },
+  data() {
+    return {
+      title: 'info',
+      description: 'This is a blog about music for people who like music.'
+    }
+  },
   async asyncData() {
     try {
       const data = await import(`~/content/data/info.json`);
@@ -51,7 +57,9 @@ export default {
     return {
       bodyAttrs: {
         style: this.isInfoPage && `background-color: ${this.data.background_color}; color: ${this.data.text_color}`
-      }
+      },
+      title: this.title,
+      description: this.description
     };
   }
 };
