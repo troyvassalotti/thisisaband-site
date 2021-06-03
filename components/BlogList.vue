@@ -142,7 +142,6 @@ right now its just plaintext not sure how to target the loader to parse this
         div.hero_image {
           img {
             opacity: 0.8;
-            -webkit-transition: opacity 0.3 ease;
             transition: opacity 0.3s ease;
           }
         }
@@ -192,5 +191,4 @@ right now its just plaintext not sure how to target the loader to parse this
     }
   }
 }
-
 </style>

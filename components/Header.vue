@@ -16,10 +16,7 @@
 <script>
 export default {
   props: {
-    isInfoPage: {
-      type: Boolean,
-      required: false
-    }
+    isInfoPage: Boolean
   },
   computed: {
     infoRoute() {

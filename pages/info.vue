@@ -1,5 +1,5 @@
 <template>
-  <main class='info_blurb' id='main'>
+  <main id='main' class='info_blurb'>
     <h2>{{ data.description }}</h2>
     <section v-html='data.cta'></section>
     <ul role='list'>
@@ -16,7 +16,7 @@
       </li>
       <li>
         <p>
-          <a :href='`https://github.com/${data.contact.github_handle}`'>Github: {{ data.contact.github_handle }}</a>
+          <a :href='`https://github.com/${data.contact.github_handle}`'>GitHub: {{ data.contact.github_handle }}</a>
         </p>
       </li>
     </ul>
@@ -32,15 +32,15 @@ export default {
   components: {
     SubmitForm
   },
-  computed: {
-    isInfoPage() {
-      return this.$nuxt._route.name === 'info' && true;
-    }
-  },
   data() {
     return {
       title: 'info',
       description: 'This is a blog about music for people who like music.'
+    }
+  },
+  computed: {
+    isInfoPage() {
+      return this.$nuxt._route.name === 'info' && true;
     }
   },
   async asyncData() {
