@@ -4,3 +4,12 @@
     to = "https://www.thisisa.band/:splat"
     status = 301
     force = true
+
+# Custom headers
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Content-Type-Options = "nosniff"
+        X-Frame-Options = "SAMEORIGIN"
+        X-XSS-Protection = "1"
+        Content-Security-Policy = "default-src 'self' 'unsafe-inline'"
