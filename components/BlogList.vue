@@ -1,22 +1,21 @@
 <template>
   <main id='main'>
     <ul class='list' role='list'>
-      <NuxtLink
-        v-for='post in sortedPosts'
-        :key='post.attributes.title'
-        :to='`/blog/${formatSlug(post.attributes.title)}`'
-      >
-        <li>
+      <li v-for='post in sortedPosts'
+          :key='post.attributes.title'>
+        <NuxtLink
+          :to='`/blog/${formatSlug(post.attributes.title)}`'
+        >
           <div class='hero_image'>
-            <img :src='post.attributes.hero_image' :alt='post.attributes.title'>
+            <img :src='post.attributes.hero_image' :alt='post.attributes.title' width='400' height='250'>
           </div>
           <div class='blogList__info'>
             <h2>{{ post.attributes.title }}</h2>
             <p>{{ formatDate(post.attributes.date) }}</p>
             <p>{{ formatExcerpt(post.body) }}...</p>
           </div>
-        </li>
-      </NuxtLink>
+        </NuxtLink>
+      </li>
     </ul>
   </main>
 </template>
@@ -71,14 +70,23 @@ right now its just plaintext not sure how to target the loader to parse this
   a:hover {
     opacity: 1;
 
-    li {
+
       div.hero_image {
         img {
           opacity: 0.8;
           transition: opacity 0.3s ease;
         }
       }
-    }
+
+  }
+
+  a {
+    opacity: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 38vh;
+    margin-bottom: 0;
   }
 
   .hero_image {
@@ -88,6 +96,7 @@ right now its just plaintext not sure how to target the loader to parse this
     background-color: #000;
 
     img {
+      min-width: 100%;
       object-fit: cover;
       object-position: 50% 50%;
       opacity: 1;
@@ -111,15 +120,6 @@ right now its just plaintext not sure how to target the loader to parse this
     }
   }
 
-  li {
-    opacity: inherit;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 38vh;
-    margin-bottom: 0;
-  }
-
   h2 {
     margin-bottom: 0.5rem;
   }
@@ -138,7 +138,7 @@ right now its just plaintext not sure how to target the loader to parse this
     a:hover {
       opacity: 1;
 
-      li {
+
         div.hero_image {
           img {
             opacity: 0.8;
@@ -154,10 +154,10 @@ right now its just plaintext not sure how to target the loader to parse this
             transition: transform 0.5s ease-out;
           }
         }
-      }
+
     }
 
-    li {
+    a {
       min-height: 250px;
       height: 33.333vh;
       flex-direction: row;
@@ -167,7 +167,6 @@ right now its just plaintext not sure how to target the loader to parse this
       height: 100%;
 
       img {
-        min-width: 100%;
         height: 100%;
         width: auto;
         min-height: 0;

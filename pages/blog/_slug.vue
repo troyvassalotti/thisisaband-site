@@ -3,7 +3,7 @@
 <template>
   <article class='blog'>
     <figure class='blog__hero'>
-      <img :src='post.attributes.hero_image' :alt='post.attributes.title'>
+      <img :src='post.attributes.hero_image' :alt='post.attributes.title' width='1332' height='600'>
     </figure>
     <div class='blog__info'>
       <h2>This is: {{ post.attributes.title }}.</h2>
