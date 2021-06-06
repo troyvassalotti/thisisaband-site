@@ -110,7 +110,7 @@ right now its just plaintext not sure how to target the loader to parse this
     flex-direction: column;
     justify-content: center;
     padding: 1.5rem 1.25rem;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid var(--border-color);
 
     h2,
     h3,
