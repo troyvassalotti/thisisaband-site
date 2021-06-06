@@ -1,10 +1,12 @@
 html {
-  --black-1: hsl(0,0%,27%);
-  --black-2: hsl(0,0%,19%);
-  --light-gray: #A0A0A0;
-  --light-gray-2: #EBEBEB;
+  --black-full: hsl(0, 0%, 0%);
+  --black-1: hsl(0, 0%, 19%);
+  --light-gray: hsl(0, 0%, 92%);
   --blue-1: #BFCDF9;
-  --border-color: var(--light-gray-2, #EBEBEB);
+  --border-color: var(--light-gray);
+  --bg: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 27%);
+  --headline: hsl(0, 0%, 0%);
   --font-stack: -apple-system, BlinkMacSystemFont,
   "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans",
@@ -12,21 +14,19 @@ html {
 }
 
 body {
-  --lightness: 0%;
   font-family: var(--font-stack);
-  color: hsl(0, 0%, var(--lightness));
 }
 
 a {
   text-decoration: none;
   color: inherit;
   transition: opacity .2s ease;
-}
 
-a:hover {
-  transition: opacity .2s ease;
-  opacity: .5;
-  text-decoration-color: inherit;
+  &:hover {
+    opacity: .5;
+    text-decoration-color: inherit;
+    transition: opacity .2s ease;
+  }
 }
 
 //TYPOGRAPHY-------------------------------------
@@ -34,6 +34,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-stack);
   font-weight: 700;
+  color: var(--headline);
 }
 
 h1 {
@@ -49,8 +50,6 @@ h3 {
 }
 
 p {
-  --lightness: 27%;
-  color: hsl(0, 0%, var(--lightness));
   font-size: 1.2rem;
 }
 
@@ -60,20 +59,20 @@ p {
   contain: content;
   position: relative;
   width: 100%;
-}
 
-.video-embed::after {
-  content: "";
-  display: block;
-  padding-block-end: calc(100% / (16 / 9));
-}
+  &::after {
+    content: "";
+    display: block;
+    padding-block-end: calc(100% / (16 / 9));
+  }
 
-.video-embed iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -82,16 +81,13 @@ p {
   }
 }
 
-//@media (prefers-color-scheme: dark) {
-//  html {
-//    --border-color: var(--black-1, #464646);
-//  }
-//  body {
-//    --lightness: 100%;
-//    background-color: var(--black-2);
-//  }
-//
-//  p {
-//    --lightness: 80%;
-//  }
-//}
+@media (prefers-color-scheme: dark) {
+  html {
+    --border-color: var(--black-1, #464646);
+    --headline: hsl(0, 0, 0%);
+  }
+  body {
+    --bg: hsl(0, 0%, 5%);
+    --text: hsl(0, 0%, 80%);
+  }
+}

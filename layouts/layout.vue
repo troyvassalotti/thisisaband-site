@@ -18,7 +18,10 @@ export default {
           rel: 'canonical',
           href: 'https://www.thisisa.band' + this.$route.path
         }
-      ]
+      ],
+      bodyAttrs: {
+        style: `background-color: var(--bg); color: var(--text)`
+      }
     }
   },
   components: {
