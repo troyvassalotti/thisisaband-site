@@ -18,3 +18,5 @@ Ever since then though, I've had a hard time picking out anyone else to listen t
 Find Edamame here: [https://www.edamamebeats.com/](https://www.edamamebeats.com/ "https://www.edamamebeats.com/") or on your favorite streaming service.
 
 Float on.
+
+<div class="video-embed"><iframe width="560" height="315" src="[https://www.youtube-nocookie.com/embed/GGD5ksNuito](https://www.youtube-nocookie.com/embed/GGD5ksNuito "https://www.youtube-nocookie.com/embed/GGD5ksNuito")" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
