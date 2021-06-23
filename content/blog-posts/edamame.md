@@ -2,7 +2,7 @@
 author: Troy Vassalotti
 title: Edamame
 date: 2021-06-22T00:00:00-04:00
-hero_image: "/edamame-hero.jpg"
+hero_image: "/edamame-update.jpg"
 
 ---
 > Songs to help you float.
