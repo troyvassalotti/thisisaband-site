@@ -3,7 +3,7 @@ author: Troy Vassalotti
 title: The Dirty Nil
 slug: the-dirty-nil
 date: 2021-03-21T04:00:00.000+00:00
-hero_image: "/thedirtynil.jpg"
+hero_image: "/thedirtynil-update.jpg"
 
 ---
 You know that feeling of a cool, summer breeze after a long day of suffering through the existence that is life? Well, imagine that except with a sudden urge to punch a wall out of sheer enjoyment. That is roughly what it feels like to listen through _Fuck Art_ - the latest album from [The Dirty Nil](https://thedirtynil.com/).
