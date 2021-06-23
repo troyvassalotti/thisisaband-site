@@ -19,4 +19,4 @@ Find Edamame here: [https://www.edamamebeats.com/](https://www.edamamebeats.com/
 
 Float on.
 
-<div class="video-embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GGD5ksNuito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-embed"><iframe width="560" height="315" loading="lazy" src="https://www.youtube-nocookie.com/embed/GGD5ksNuito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
