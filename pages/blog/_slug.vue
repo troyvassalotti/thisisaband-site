@@ -145,10 +145,6 @@ export default {
     flex-direction: column;
     justify-content: center;
 
-    a {
-      text-decoration: underline;
-    }
-
     &:last-child {
       margin-bottom: 0;
     }

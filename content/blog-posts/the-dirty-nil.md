@@ -1,5 +1,5 @@
 ---
-author: Troy Vassalotti
+author: Troy
 title: The Dirty Nil
 slug: the-dirty-nil
 date: 2021-03-21T04:00:00.000+00:00

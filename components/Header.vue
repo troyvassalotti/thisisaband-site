@@ -28,6 +28,10 @@ export default {
 
 <style scoped lang='scss'>
 .header {
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     margin-bottom: 0;
   }

@@ -87,6 +87,7 @@ right now its just plaintext not sure how to target the loader to parse this
     flex-direction: column;
     min-height: 38vh;
     margin-bottom: 0;
+    text-decoration: none;
   }
 
   .hero_image {
