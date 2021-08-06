@@ -12,4 +12,3 @@
         X-Content-Type-Options = "nosniff"
         X-Frame-Options = "SAMEORIGIN"
         X-XSS-Protection = "1"
-#        Content-Security-Policy = "default-src 'self' 'unsafe-inline' https://d33wubrfki0l68.cloudfront.net https://img.youtube.com/ https://www.youtube-nocookie.com/ https://bandcamp.com/"

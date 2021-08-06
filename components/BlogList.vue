@@ -70,13 +70,12 @@ right now its just plaintext not sure how to target the loader to parse this
   a:hover {
     opacity: 1;
 
-
-      div.hero_image {
-        img {
-          opacity: 0.8;
-          transition: opacity 0.3s ease;
-        }
+    div.hero_image {
+      img {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
       }
+    }
 
   }
 
@@ -140,21 +139,21 @@ right now its just plaintext not sure how to target the loader to parse this
       opacity: 1;
 
 
-        div.hero_image {
-          img {
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-          }
+      div.hero_image {
+        img {
+          opacity: 0.8;
+          transition: opacity 0.3s ease;
         }
+      }
 
-        div.blogList__info {
-          h2,
-          h3,
-          p {
-            transform: translateX(10px);
-            transition: transform 0.5s ease-out;
-          }
+      div.blogList__info {
+        h2,
+        h3,
+        p {
+          transform: translateX(10px);
+          transition: transform 0.5s ease-out;
         }
+      }
 
     }
 
