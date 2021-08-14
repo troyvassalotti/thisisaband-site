@@ -67,65 +67,55 @@ right now its just plaintext not sure how to target the loader to parse this
 
 <style scoped lang='scss'>
 .list {
-  a:hover {
-    opacity: 1;
-
-    div.hero_image {
-      img {
-        opacity: 0.8;
-        transition: opacity 0.3s ease;
-      }
-    }
-
-  }
-
   a {
-    opacity: inherit;
+    color: inherit;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     min-height: 38vh;
-    margin-bottom: 0;
+    opacity: inherit;
     text-decoration: none;
+
+    &:hover {
+      .hero_image {
+        img {
+          opacity: 0.8;
+          transition: opacity 0.3s ease;
+        }
+      }
+    }
   }
 
   .hero_image {
-    width: 100%;
     height: 33vh;
     overflow: hidden;
-    background-color: #000;
+    width: 100%;
 
     img {
+      min-height: 100%;
       min-width: 100%;
       object-fit: cover;
       object-position: 50% 50%;
       opacity: 1;
       transition: opacity 0.3s ease;
-      min-height: 100%;
     }
   }
 
   .blogList__info {
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem 1.25rem;
-    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem;
 
     h2,
     h3,
     p {
-      transform: translateX(0px);
       transition: transform 0.5s ease-out;
     }
   }
 
   h2 {
     margin-bottom: 0.5rem;
-  }
-
-  h3 {
-    margin-bottom: 1rem;
   }
 
   p {
@@ -135,32 +125,19 @@ right now its just plaintext not sure how to target the loader to parse this
 
 @media (min-width: 768px) {
   .list {
-    a:hover {
-      opacity: 1;
-
-
-      div.hero_image {
-        img {
-          opacity: 0.8;
-          transition: opacity 0.3s ease;
-        }
-      }
-
-      div.blogList__info {
-        h2,
-        h3,
-        p {
-          transform: translateX(10px);
-          transition: transform 0.5s ease-out;
-        }
-      }
-
-    }
-
     a {
-      min-height: 250px;
       height: 33.333vh;
       flex-direction: row;
+      min-height: 250px;
+
+      &:hover {
+        .blogList__info {
+          h2, p {
+            transition: transform 0.5s ease-out;
+            transform: translateX(10px);
+          }
+        }
+      }
     }
 
     .hero_image {
@@ -168,8 +145,8 @@ right now its just plaintext not sure how to target the loader to parse this
 
       img {
         height: 100%;
-        width: auto;
         min-height: 0;
+        width: auto;
       }
     }
 
@@ -183,10 +160,6 @@ right now its just plaintext not sure how to target the loader to parse this
   .list {
     .blogList__info {
       padding: 3rem;
-    }
-
-    h3 {
-      margin-bottom: 1.2rem;
     }
   }
 }

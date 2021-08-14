@@ -29,25 +29,17 @@ export default {
 <style scoped lang='scss'>
 .header {
   a {
+    color: inherit;
     text-decoration: none;
-  }
-
-  h1 {
-    margin-bottom: 0;
   }
 }
 
 .nav {
-  padding: 1.5rem 1.25rem;
+  align-items: center;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-
-  img {
-    margin-bottom: 0;
-  }
+  padding: 1.5rem 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -58,12 +50,12 @@ export default {
   }
 
   .nav {
-    padding: 2rem;
-    height: 100%;
-    border-right: 1px solid var(--border-color);
-    border-bottom: none;
-    flex-direction: column;
     align-items: flex-start;
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
   }
 }
 </style>

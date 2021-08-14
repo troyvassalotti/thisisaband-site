@@ -1,19 +1,12 @@
 html {
-  --border-color: ButtonFace;
+  --border-color: hsl(0, 0%, 50%, .5);
   --bg: hsl(0, 0%, 100%);
   --text: hsl(0, 0%, 27%);
   --font-stack: -apple-system, BlinkMacSystemFont,
   "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
-}
-
-@supports (color-scheme: light dark) {
-  html {
-    --bg: Canvas;
-    --text: CanvasText;
-    color-scheme: light dark;
-  }
+  color-scheme: light dark;
 }
 
 body {
@@ -21,13 +14,10 @@ body {
 }
 
 a {
-  color: inherit;
   transition: opacity .2s ease;
 
   &:hover {
     opacity: .5;
-    text-decoration-color: inherit;
-    transition: opacity .2s ease;
   }
 }
 
@@ -77,32 +67,12 @@ p {
 }
 
 blockquote {
-  border-left: 1px solid currentColor;
+  border-left: 1px solid var(--border-color);
   padding: 1rem;
   font-style: italic;
   margin-block-end: 2rem;
 
   p {
     margin-block-end: 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    --bg: hsl(0, 0%, 5%);
-    --text: hsl(0, 0%, 80%);
-  }
-
-  @supports (color-scheme: light dark) {
-    html {
-      --bg: Canvas;
-      --text: CanvasText;
-    }
   }
 }

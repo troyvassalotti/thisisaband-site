@@ -55,9 +55,6 @@ export default {
   },
   head() {
     return {
-      bodyAttrs: {
-        style: this.isInfoPage && `background-color: ${this.data.background_color}; color: ${this.data.text_color}`
-      },
       title: this.title,
       description: this.description
     };
@@ -69,14 +66,9 @@ export default {
 .info_blurb {
   max-width: 800px;
   padding: 1.5rem 1.25rem;
-  color: inherit;
 
   h2 {
     margin-bottom: revert;
-  }
-
-  a {
-    text-decoration: underline;
   }
 }
 

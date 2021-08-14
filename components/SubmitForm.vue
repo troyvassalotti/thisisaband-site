@@ -35,20 +35,17 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1ch;
-  width: 100%;
-  padding: 1ch;
 
   label {
     display: flex;
     flex-direction: column;
-    margin: 0.5ex 0;
+    margin-block-end: 1ex;
+    margin-block-start: 1ex;
   }
-}
 
-#email,
-#submission,
-#name {
-  padding: 1ex;
+  input {
+    padding: 1ex;
+  }
 }
 
 #submission {
@@ -57,23 +54,7 @@ form {
 
 #submit {
   cursor: pointer;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
   display: inline-block;
-  background-color: transparent;
-  border: 1px solid currentColor;
-  padding: 1ex 2ex;
-  color: currentColor;
-  text-decoration: none;
   width: max-content;
-
-  &:hover {
-    background: var(--black-2);
-    color: #fff;
-  }
-}
-
-a {
-  text-decoration: underline;
 }
 </style>

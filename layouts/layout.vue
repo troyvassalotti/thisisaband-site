@@ -18,10 +18,7 @@ export default {
           rel: 'canonical',
           href: 'https://www.thisisa.band' + this.$route.path
         }
-      ],
-      bodyAttrs: {
-        style: `background-color: var(--bg); color: var(--text)`
-      }
+      ]
     }
   },
   components: {
@@ -36,13 +33,6 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.layout {
-
-  &.info_page {
-    color: #EBEBEB;
-  }
-}
-
 @media (min-width: 768px) {
   .layout {
     display: grid;
