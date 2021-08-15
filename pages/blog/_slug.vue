@@ -135,6 +135,7 @@ export default {
   .blog__body {
     margin: 0 auto;
     max-width: 800px;
+    padding: 0 1rem;
 
     &:last-child {
       margin-bottom: 0;
