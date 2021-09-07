@@ -9,7 +9,7 @@ Discovering a new band or genre has often led to defining moments in my life. Th
 
 But we're not talking about any of those moments right now. Sometime in college - likely after a breakup - I gave Into It. Over It.'s _Proper_ a listen. That album took me on a journey of musical discovery like no other, which is why we're talking about Pet Symmetry today.
 
-Pet Symmetry is the trio of Erik Czaja, Marcus Nuccio, Evan Thomas Weiss and they recently (to this blog post) released their third LP _Future Suits_. If I told you this album gets better with each and every listen, I'd still be underselling how great it is. The previous release, _Visions_, is an equally enjoyable album, but there is something I can't quite put my finger on about _Future Suits_.
+Pet Symmetry is the trio of Erik Czaja, Marcus Nuccio, and Evan Thomas Weiss, and they recently (to this blog post) released their third LP _Future Suits_. If I told you this album gets better with each and every listen, I'd still be underselling how great it is. The previous release, _Visions_, is an equally enjoyable album, but there is something I can't quite put my finger on about _Future Suits_.
 
 The production is top-notch; the hooks are clean as hell (who decided hell was a clean place?); and they cover such a wide range of sounds. If you're able to get through the music video for "2021: A Personal Space Odyssey" without feeling the most pumped you've ever been, then I commend you.
 

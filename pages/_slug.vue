@@ -12,7 +12,7 @@
     <div class='blog__body' v-html='post.html'></div>
     <div class='blog__footer'>
       <p>Written By: {{ post.attributes.author }}</p>
-      <NuxtLink :to='`/blog/${nextBlogPath}`'>
+      <NuxtLink :to='`${nextBlogPath}`'>
         <svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewBox='0 0 26 26'
              enableBackground='new 0 0 26 26'>
           <path
