@@ -31,5 +31,6 @@ fields:
   label: hero_image
 pages:
 - content/blog-posts/edamame.md
+- content/blog-posts/lower-lands.md
 - content/blog-posts/pet-symmetry.md
 - content/blog-posts/waterparks.md
