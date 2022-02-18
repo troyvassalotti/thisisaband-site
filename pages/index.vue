@@ -1,20 +1,20 @@
 // the posts are passed down to the Blog List component to be rendered
 
 <template>
-  <BlogList :posts='posts' />
+  <BlogList :posts="posts" />
 </template>
 
 <script>
-import BlogList from '~/components/BlogList.vue';
+import BlogList from "~/components/BlogList.vue";
 
 export default {
-  layout: 'layout',
+  layout: "layout",
   components: {
     BlogList
   },
   async asyncData() {
     // create context via webpack to map over all blog posts
-    const allPosts = await require.context('~/content/blog-posts/', true, /\.md$/);
+    const allPosts = await require.context("~/content/blog-posts/", true, /\.md$/);
     const posts = allPosts.keys().map((key) => {
       // give back the value of each post context
       return allPosts(key);

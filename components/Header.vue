@@ -1,12 +1,12 @@
 <template>
-  <header class='header'>
-    <nav class='nav'>
-      <NuxtLink to='/'>
+  <header class="header">
+    <nav class="nav">
+      <NuxtLink to="/">
         <h1>This is a Band</h1>
       </NuxtLink>
       <div>
         <h2>
-          <NuxtLink :to='infoRoute'>{{ isInfoPage ? 'close' : 'info' }}</NuxtLink>
+          <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
         </h2>
       </div>
     </nav>
@@ -20,18 +20,16 @@ export default {
   },
   computed: {
     infoRoute() {
-      return this.isInfoPage ? '/' : '/info/';
+      return this.isInfoPage ? "/" : "/info/";
     }
   }
 };
 </script>
 
-<style scoped lang='scss'>
-.header {
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+<style scoped>
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .nav {

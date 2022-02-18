@@ -1,12 +1,9 @@
 [build]
-    command = "yarn generate"
+    command = "npm run generate"
     publish = "dist"
 
 [build.processing]
     skip_processing = true
-
-[build.environment]
-    NODE_VERSION = "14"
 
 # Redirect from the default Netlify site to my custom domain
 [[redirects]]

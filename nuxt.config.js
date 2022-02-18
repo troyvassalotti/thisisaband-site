@@ -1,8 +1,6 @@
 import path from 'path';
-/* eslint-disable */
 const glob = require('glob');
 const config = require('./content/data/config.json');
-/* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
   '/': 'content/blog-posts/*.md'
 });
@@ -54,18 +52,11 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/styles/modern-reset.scss', '@/assets/styles/global.scss'],
+  css: ['@/assets/styles/modern-reset.css', '@/assets/styles/global.css'],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  devModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
   /*
    ** Nuxt.js modules
    */

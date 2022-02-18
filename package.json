@@ -5,7 +5,6 @@
   "author": "Kendall Strautman",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -14,20 +13,6 @@
   },
   "dependencies": {
     "frontmatter-markdown-loader": "^1.8.0",
-    "node-sass": "^4.13.0",
-    "nuxt": "^2.15.6",
-    "sass-loader": "^7.1.0"
-  },
-  "devDependencies": {
-    "@nuxt/types": "~2.15.0",
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^0.2.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "nodemon": "^1.18.9",
-    "prettier": "^1.16.4"
+    "nuxt": "^2.15.6"
   }
 }
