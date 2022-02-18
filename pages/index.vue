@@ -1,9 +1,3 @@
-// the posts are passed down to the Blog List component to be rendered
-
-<template>
-  <BlogList :posts="posts" />
-</template>
-
 <script>
 import BlogList from "~/components/BlogList.vue";
 
@@ -25,3 +19,7 @@ export default {
   }
 };
 </script>
+
+<template>
+  <BlogList :posts="posts" />
+</template>

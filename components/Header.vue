@@ -1,3 +1,16 @@
+<script>
+export default {
+  props: {
+    isInfoPage: Boolean
+  },
+  computed: {
+    infoRoute() {
+      return this.isInfoPage ? "/" : "/info/";
+    }
+  }
+};
+</script>
+
 <template>
   <header class="header">
     <nav class="nav">
@@ -13,19 +26,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  props: {
-    isInfoPage: Boolean
-  },
-  computed: {
-    infoRoute() {
-      return this.isInfoPage ? "/" : "/info/";
-    }
-  }
-};
-</script>
-
 <style scoped>
 a {
   color: inherit;
@@ -37,22 +37,22 @@ a {
   border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 1.25rem;
+  padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .header {
-    height: 100vh;
+    block-size: 100vh;
     position: sticky;
     top: 0;
   }
 
   .nav {
     align-items: flex-start;
+    block-size: 100%;
     border-bottom: none;
     border-right: 1px solid var(--border-color);
     flex-direction: column;
-    height: 100%;
     padding: 2rem;
   }
 }

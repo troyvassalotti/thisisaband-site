@@ -1,28 +1,5 @@
-// this is a dynamically created template
-
-<template>
-  <article class="blog">
-    <figure class="blog__hero">
-      <img :src="post.attributes.hero_image" :alt="post.attributes.title" width="1332" height="600">
-    </figure>
-    <div class="blog__info">
-      <h2>This is: {{ post.attributes.title }}.</h2>
-      <p>{{ formattedDate }}</p>
-    </div>
-    <div class="blog__body" v-html="post.html"></div>
-    <div class="blog__footer">
-      <p>Written By: {{ post.attributes.author }}</p>
-      <NuxtLink :to="`${nextBlogPath}`">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 26"
-             enableBackground="new 0 0 26 26">
-          <path
-            d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
-        </svg>
-      </NuxtLink>
-    </div>
-  </article>
-</template>
 <script>
+// this is a dynamically created template
 export default {
   layout: "layout",
   data() {
@@ -100,18 +77,45 @@ export default {
 };
 </script>
 
+<template>
+  <article class="blog">
+    <figure class="blog__hero">
+      <img :src="post.attributes.hero_image" :alt="post.attributes.title" width="1332" height="600" loading="eager"
+           decoding="async">
+    </figure>
+    <div class="blog__info">
+      <h2>This is: {{ post.attributes.title }}.</h2>
+      <p>{{ formattedDate }}</p>
+    </div>
+    <div class="blog__body" v-html="post.html"></div>
+    <div class="blog__footer">
+      <p>Written By: {{ post.attributes.author }}</p>
+      <NuxtLink :to="`${nextBlogPath}`">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 26"
+             enableBackground="new 0 0 26 26">
+          <path
+            d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
+        </svg>
+      </NuxtLink>
+    </div>
+  </article>
+</template>
+
 <style scoped>
+.blog > * {
+  margin-inline: auto;
+  max-inline-size: 800px;
+}
+
 .blog__hero {
-  margin: 0;
-  min-height: 300px;
+  min-block-size: 300px;
+  min-inline-size: 100%;
   overflow: hidden;
-  width: 100%;
 }
 
 .blog__hero img {
-  margin-block-end: 0;
-  min-height: 100%;
-  min-width: 100%;
+  min-block-size: 100%;
+  min-inline-size: 100%;
   object-fit: cover;
 }
 
@@ -120,11 +124,9 @@ h2, h3, h4, h5, h6 {
 }
 
 .blog__info {
-  margin: 0 auto;
-  max-width: 768px;
-  padding: 1.5rem 1.25rem;
+  inline-size: 100%;
+  padding: 1.5rem;
   text-align: center;
-  width: 100%;
 }
 
 .blog__info p {
@@ -132,27 +134,18 @@ h2, h3, h4, h5, h6 {
 }
 
 .blog__body {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 1rem;
+  padding-inline: 2rem;
 }
 
 .blog__body:last-child {
   margin-bottom: 0;
 }
 
-img {
-  margin-block: 1rem;
-}
-
 .blog__footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 1.5rem 1.25rem;
-  width: 100%;
+  padding: 1.25rem;
 }
 
 .blog__footer a {
@@ -160,35 +153,21 @@ img {
 }
 
 .blog__footer a svg {
+  inline-size: 20px;
   stroke: currentColor;
-  width: 20px;
+}
+
+.blog__footer p {
+  margin-block-end: 0;
 }
 
 @media (min-width: 768px) {
-  .blog__body {
-    padding: 0 2rem;
-  }
-
   .blog__hero {
     min-height: 600px;
   }
 
   .blog__info {
-    padding: 2rem 0;
-  }
-
-  .blog__footer {
-    padding: 2.25rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .blog__info {
-    padding: 3rem 0;
-  }
-
-  .blog__footer {
-    padding: 2rem;
+    padding-block: 2.5rem;
   }
 }
 </style>

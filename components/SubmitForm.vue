@@ -1,3 +1,9 @@
+<script>
+export default {
+  name: "SubmitForm"
+};
+</script>
+
 <template>
   <section class="form-wrapper">
     <h3>Want to submit a band?</h3>
@@ -20,44 +26,38 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: "SubmitForm"
-};
-</script>
-
 <style scoped>
 .form-wrapper {
+  --spacing: 1ch;
   margin-block-start: 2rem;
 }
 
 h3 {
-  margin-block-end: revert;
+  margin-block: revert;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1ch;
+  gap: var(--spacing);
 }
 
 label {
   display: flex;
   flex-direction: column;
-  margin-block: 1ex;
+  margin-block: var(--spacing);
 }
 
 input {
-  padding: 1ex;
+  padding: var(--spacing);
 }
 
 #submission {
-  height: 10em;
+  block-size: 10em;
 }
 
 #submit {
   cursor: pointer;
-  display: inline-block;
-  width: max-content;
+  inline-size: max-content;
 }
 </style>

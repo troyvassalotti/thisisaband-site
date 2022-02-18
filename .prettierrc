@@ -1,7 +1,8 @@
 {
   "semi": true,
-  "formatOnSave": true,
-  "arrowParens": "always",
   "singleQuote": false,
-  "htmlWhitespaceSensitivity": "ignore"
+  "printWidth": 100,
+  "quoteProps": "consistent",
+  "bracketSameLine": true,
+  "tabWidth": 4
 }
