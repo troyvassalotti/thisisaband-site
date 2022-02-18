@@ -76,13 +76,13 @@ export default {
 }
 
 .hero_image {
-  block-size: 33vh;
+  min-block-size: 33.333vh;
   overflow: hidden;
 }
 
 .hero_image img {
-  block-size: 100%;
-  inline-size: 100%;
+  min-block-size: 100%;
+  min-inline-size: 100%;
   object-fit: cover;
   object-position: center;
   opacity: 1;
@@ -111,8 +111,8 @@ export default {
 
 @media (min-width: 768px) {
   .list a {
-    block-size: 33.333vh;
     flex-direction: row;
+    min-block-size: 33.333vh;
   }
 
   .list a:hover :is(h2, p) {
@@ -121,7 +121,7 @@ export default {
   }
 
   .hero_image {
-    block-size: 100%;
+    min-block-size: 100%;
   }
 
   .blogList__info {
