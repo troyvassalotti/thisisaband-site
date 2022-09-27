@@ -3,8 +3,8 @@ author: Troy
 title: Pet Symmetry
 date: 2021-09-06T00:00:00-04:00
 hero_image: "/pet-symmetry.jpg"
-
 ---
+
 Discovering a new band or genre has often led to defining moments in my life. There was the time in high school when I learned what post-rock was, or when I stumbled upon Aesop Rock's _The Impossible Kid_, or even my first time in the pit of a Four Year Strong show. (They're probably the only band where I'll actively seek a spot in the pit.)
 
 But we're not talking about any of those moments right now. Sometime in college - likely after a breakup - I gave Into It. Over It.'s _Proper_ a listen. That album took me on a journey of musical discovery like no other, which is why we're talking about Pet Symmetry today.
@@ -17,7 +17,7 @@ The production is top-notch; the hooks are clean as hell (who decided hell was a
 
 Listening to Pet Symmetry has influenced my own writing by showing me a way to be lighthearted-yet-sincere in my music - both instrumentally and lyrically. I'm by no means a lyric writer, but I've moved on from that notion that I have to be _going through something_ to write a song; a song could be about what's going on _at this moment_ and not be a depressing diary entry.
 
-***
+---
 
 I saw the band in DC on the _Visions_ tour, and if they end up coming around here again for _Future Suits_ then you bet I'll be there. Their stage chemistry is something to admire and I'll still name them as one of my favorite live acts because of it.
 

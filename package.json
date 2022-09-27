@@ -1,21 +1,21 @@
 {
-  "name": "starter-blog-nuxt",
-  "version": "1.0.0",
-  "description": "starter blog using nuxt &amp; forestry",
-  "author": "Kendall Strautman",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
-  },
-  "dependencies": {
-    "frontmatter-markdown-loader": "^1.8.0",
-    "nuxt": "^2.15.6"
-  },
-  "devDependencies": {
-    "prettier": "^2.5.1"
-  }
+	"name": "starter-blog-nuxt",
+	"version": "1.0.0",
+	"description": "starter blog using nuxt &amp; forestry",
+	"author": "Kendall Strautman",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"format": "npx prettier --write ."
+	},
+	"dependencies": {
+		"frontmatter-markdown-loader": "^1.8.0",
+		"nuxt": "^2.15.6"
+	},
+	"devDependencies": {
+		"prettier": "^2.5.1"
+	}
 }

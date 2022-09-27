@@ -4,8 +4,8 @@ title: The Dirty Nil
 slug: the-dirty-nil
 date: 2021-03-21T04:00:00.000+00:00
 hero_image: "/dirtynil-1.jpg"
-
 ---
+
 You know that feeling of a cool, summer breeze after a long day of suffering through the existence that is life? Well, imagine that except with a sudden urge to punch a wall out of sheer enjoyment. That is roughly what it feels like to listen through _Fuck Art_ - the latest album from [The Dirty Nil](https://thedirtynil.com/).
 
 It's hard to describe how this album makes you feel simultaneously like you just got let out of school at the start of summer vacation, but that you also need a beer right then and there.

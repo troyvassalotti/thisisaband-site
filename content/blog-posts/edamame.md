@@ -3,8 +3,8 @@ author: Troy
 title: Edamame
 date: 2021-06-22T00:00:00-04:00
 hero_image: "/edamame-update.jpg"
-
 ---
+
 > Songs to help you float.
 
 That's how Edamame describes himself, and he couldn't be more right. By taking the career path I'm in, it's basically a requirement for me to enjoy [lo-fi beats](https://www.lofi.cafe/); not really, but kind of yes. I can't say I've found a better listening experience for long periods of writing code than to put on [Edamame's _Periderm_](https://edamame.bandcamp.com/album/periderm). Hell, I'll just shuffle his music while I clean the house because I'm a rebel like that.

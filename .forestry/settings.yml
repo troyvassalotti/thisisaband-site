@@ -2,31 +2,31 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url: 
+webhook_url:
 sections:
-- type: heading
-  label: Content
-- type: directory
-  path: content/blog-posts
-  label: Blog Posts
-  create: documents
-  match: "**/*"
-  templates:
-  - blog-post
-- type: document
-  path: content/data/authors.json
-  label: Author List
-- type: document
-  path: content/data/info.json
-  label: Info Page
-- type: heading
-  label: Config
-- type: document
-  path: content/data/config.json
-  label: Site Info
+  - type: heading
+    label: Content
+  - type: directory
+    path: content/blog-posts
+    label: Blog Posts
+    create: documents
+    match: "**/*"
+    templates:
+      - blog-post
+  - type: document
+    path: content/data/authors.json
+    label: Author List
+  - type: document
+    path: content/data/info.json
+    label: Info Page
+  - type: heading
+    label: Config
+  - type: document
+    path: content/data/config.json
+    label: Site Info
 upload_dir: static
-public_path: ''
-front_matter_path: ''
+public_path: ""
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 build:

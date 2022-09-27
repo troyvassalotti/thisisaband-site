@@ -2,35 +2,35 @@
 label: Blog Post
 hide_body: false
 fields:
-- type: text
-  name: title
-  label: title
-  config:
-    required: true
-  description: Enter title, needs to match filename for routing
-- name: author
-  type: select
-  default: []
-  config:
-    required: true
-    options: []
-    source:
-      type: documents
-      section: author-list
-      file: content/data/authors.json
-      path: authors
-  label: Author
-  description: Select author, to add a new author, go to Authors List
-- type: datetime
-  name: date
-  label: date
-  config:
-    required: true
-- type: file
-  name: hero_image
-  label: hero_image
+  - type: text
+    name: title
+    label: title
+    config:
+      required: true
+    description: Enter title, needs to match filename for routing
+  - name: author
+    type: select
+    default: []
+    config:
+      required: true
+      options: []
+      source:
+        type: documents
+        section: author-list
+        file: content/data/authors.json
+        path: authors
+    label: Author
+    description: Select author, to add a new author, go to Authors List
+  - type: datetime
+    name: date
+    label: date
+    config:
+      required: true
+  - type: file
+    name: hero_image
+    label: hero_image
 pages:
-- content/blog-posts/edamame.md
-- content/blog-posts/lower-lands.md
-- content/blog-posts/pet-symmetry.md
-- content/blog-posts/waterparks.md
+  - content/blog-posts/edamame.md
+  - content/blog-posts/lower-lands.md
+  - content/blog-posts/pet-symmetry.md
+  - content/blog-posts/waterparks.md

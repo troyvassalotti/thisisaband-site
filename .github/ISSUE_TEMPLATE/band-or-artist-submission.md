@@ -4,7 +4,6 @@ about: Use this template to send in your submission.
 title: "[SUBMISSION]"
 labels: Submission
 assignees: troyvassalotti
-
 ---
 
 **Band/Artist Name:**
