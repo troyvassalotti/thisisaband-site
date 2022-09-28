@@ -2,8 +2,9 @@
 author: Troy
 title: The Dirty Nil
 slug: the-dirty-nil
-date: 2021-03-21T04:00:00.000+00:00
+date: 2021-03-21
 hero_image: "/dirtynil-1.jpg"
+tags: ["single"]
 ---
 
 You know that feeling of a cool, summer breeze after a long day of suffering through the existence that is life? Well, imagine that except with a sudden urge to punch a wall out of sheer enjoyment. That is roughly what it feels like to listen through _Fuck Art_ - the latest album from [The Dirty Nil](https://thedirtynil.com/).

@@ -1,16 +1,8 @@
 html {
 	--border-color: hsl(0, 0%, 50%, 0.5);
-	--bg: hsl(0, 0%, 100%);
-	--text: hsl(0, 0%, 27%);
-	--font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 	color-scheme: light dark;
 	overflow-wrap: break-word;
-}
-
-body {
-	font-family: var(--font-stack);
 }
 
 a {
@@ -21,47 +13,9 @@ a:hover {
 	opacity: 0.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--font-stack);
-	font-weight: 700;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
-h2 {
-	font-size: 1.7rem;
-}
-
-h3 {
-	font-size: 1.2rem;
-}
-
-p {
-	font-size: 1.2rem;
-	margin-block-end: 1.45rem;
-}
-
-li *:last-child {
-	margin-block-end: 0;
-}
-
-p *:last-child {
-	margin-block-end: 0;
-}
-
-li > p {
-	margin-block-end: calc(1.45rem / 2);
-}
-
-.video-embed {
-	margin-block-end: clamp(1ex, 5vw, 6ex);
+.video-embed,
+.playlist-embed {
+	margin-block: clamp(1ex, 5vw, 6ex);
 }
 
 .video-embed iframe {
@@ -77,5 +31,4 @@ blockquote {
 
 blockquote p {
 	font-style: italic;
-	margin-block-end: 0;
 }

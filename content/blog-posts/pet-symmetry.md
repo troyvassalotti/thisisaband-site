@@ -1,8 +1,9 @@
 ---
 author: Troy
 title: Pet Symmetry
-date: 2021-09-06T00:00:00-04:00
+date: 2021-09-06
 hero_image: "/pet-symmetry.jpg"
+tags: ["single"]
 ---
 
 Discovering a new band or genre has often led to defining moments in my life. There was the time in high school when I learned what post-rock was, or when I stumbled upon Aesop Rock's _The Impossible Kid_, or even my first time in the pit of a Four Year Strong show. (They're probably the only band where I'll actively seek a spot in the pit.)

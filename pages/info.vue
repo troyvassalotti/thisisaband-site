@@ -9,23 +9,18 @@ export default {
 	data() {
 		return {
 			title: "Info",
-			description: "This is a blog about music for people who like music.",
+			description: "This blog is about your favorite bands.",
+			contact: {
+				email: "contact@thisisa.band",
+				twitter_handle: "validcharacters",
+				github_handle: "troyvassalotti",
+			},
 		};
 	},
 	computed: {
 		isInfoPage() {
 			return this.$nuxt._route.name === "info" && true;
 		},
-	},
-	async asyncData() {
-		try {
-			const data = await import(`~/content/data/info.json`);
-			return {
-				data,
-			};
-		} catch (err) {
-			return false;
-		}
 	},
 	head() {
 		return {
@@ -37,28 +32,50 @@ export default {
 </script>
 
 <template>
-	<main id="main" class="info_blurb">
-		<h2>{{ data.description }}</h2>
-		<section v-html="data.cta"></section>
+	<main id="main" class="flow">
+		<h2>{{ this.description }}</h2>
+		<section class="flow">
+			<p>
+				One night, I was looking for a new domain to buy and stumbled upon <em>thisisa.band</em>. It
+				served a completely different purpose at the time, but it wasn't long before I thought of a
+				better way to put this internet real estate to use. <em>This Is A Band</em> is a place for
+				you to spread the word about the bands in your life, but not just for the hell of it.
+			</p>
+			<ul>
+				<li>
+					<p>
+						Did you see this amazing band on your travels in Europe that you'd never heard of and
+						think everyone else needs to hear them?
+					</p>
+				</li>
+				<li>
+					<p>
+						While you were on tour with your own band, did you perform alongside just the greatest
+						people you'd ever met and feel like everyone else needs to know how great they were?
+					</p>
+				</li>
+				<li>
+					<p>
+						Maybe you were going through a tough time a few years ago and this one band was the
+						reason you're where you are today?
+					</p>
+				</li>
+			</ul>
+			<p>Whatever the reason is, <em>This is a Band</em> is the place to talk about it.</p>
+		</section>
 		<ul role="list">
 			<li>
-				<p>
-					<a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email }}</a>
-				</p>
+				<a :href="`mailto:${this.contact.email}`">Email: {{ this.contact.email }}</a>
 			</li>
 			<li>
-				<p>
-					<a :href="`https://twitter.com/${data.contact.twitter_handle}`"
-						>Twitter: @{{ data.contact.twitter_handle }}</a
-					>
-				</p>
+				<a :href="`https://twitter.com/${this.contact.twitter_handle}`"
+					>Twitter: @{{ this.contact.twitter_handle }}</a
+				>
 			</li>
 			<li>
-				<p>
-					<a :href="`https://github.com/${data.contact.github_handle}`"
-						>GitHub: {{ data.contact.github_handle }}</a
-					>
-				</p>
+				<a :href="`https://github.com/${this.contact.github_handle}`"
+					>GitHub: {{ this.contact.github_handle }}</a
+				>
 			</li>
 		</ul>
 		<SubmitForm />
@@ -66,12 +83,8 @@ export default {
 </template>
 
 <style scoped>
-.info_blurb {
+main {
 	max-inline-size: 800px;
 	padding: 1.5rem;
-}
-
-.info_blurb h2 {
-	margin-block-end: revert;
 }
 </style>

@@ -82,8 +82,8 @@ export default {
 </script>
 
 <template>
-	<article class="blog">
-		<figure class="blog__hero">
+	<article class="post">
+		<div class="post__hero">
 			<img
 				:src="post.attributes.hero_image"
 				:alt="post.attributes.title"
@@ -91,101 +91,88 @@ export default {
 				height="600"
 				loading="eager"
 				decoding="async" />
-		</figure>
-		<div class="blog__info">
-			<h2>This is: {{ post.attributes.title }}.</h2>
-			<p>{{ formattedDate }}</p>
 		</div>
-		<div class="blog__body" v-html="post.html"></div>
-		<div class="blog__footer">
-			<p>Written By: {{ post.attributes.author }}</p>
-			<NuxtLink :to="`${nextBlogPath}`">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					version="1.1"
-					x="0px"
-					y="0px"
-					viewBox="0 0 26 26"
-					enableBackground="new 0 0 26 26">
-					<path
-						d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
-				</svg>
-			</NuxtLink>
-		</div>
+		<section class="post__content flow">
+			<header class="post__info flow">
+				<h2>This is: {{ post.attributes.title }}.</h2>
+				<p>{{ formattedDate }}</p>
+				<blockquote
+					class="post__category-description"
+					v-if="post.attributes.tags.includes('discography')">
+					<p>
+						This post is part of a series where I listen through a band's full discography and talk
+						about that journey. If you're only interested in my final thoughts and the resulting
+						playlist I made, skip to the end of the article.
+					</p>
+				</blockquote>
+			</header>
+			<div class="post__body flow" v-html="post.html"></div>
+			<div class="post__footer">
+				<p>Written By: {{ post.attributes.author }}</p>
+				<NuxtLink :to="`${nextBlogPath}`">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						version="1.1"
+						x="0px"
+						y="0px"
+						viewBox="0 0 26 26"
+						enableBackground="new 0 0 26 26">
+						<path
+							d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
+					</svg>
+				</NuxtLink>
+			</div>
+		</section>
 	</article>
 </template>
 
 <style scoped>
-.blog > * {
-	margin-inline: auto;
-	max-inline-size: 800px;
-}
-
-.blog__hero {
+.post__hero {
 	min-block-size: 300px;
-	min-inline-size: 100%;
-	overflow: hidden;
 }
 
-.blog__hero img {
+.post__hero img {
 	min-block-size: 100%;
-	min-inline-size: 100%;
 	object-fit: cover;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-block-end: revert;
+.post__content {
+	margin-inline: auto;
+	max-inline-size: 800px;
+	padding-inline: 1.5rem;
 }
 
-.blog__info {
-	inline-size: 100%;
-	padding: 1.5rem;
+.post__info {
+	padding-block-end: 1rem;
+	padding-block-start: 1.5rem;
+	padding-inline: 1.5rem;
 	text-align: center;
 }
 
-.blog__info p {
-	margin-block-end: 0;
-}
-
-.blog__body {
-	padding-inline: 2rem;
-}
-
-.blog__body:last-child {
-	margin-bottom: 0;
-}
-
-.blog__footer {
+.post__footer {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	padding: 1.25rem;
 }
 
-.blog__footer a {
+.post__footer a {
 	color: inherit;
 }
 
-.blog__footer a svg {
+.post__footer a svg {
+	fill: currentColor;
 	inline-size: 20px;
 	stroke: currentColor;
 }
 
-.blog__footer p {
-	margin-block-end: 0;
-}
-
 @media (min-width: 768px) {
-	.blog__hero {
+	.post__hero {
 		min-height: 600px;
 	}
 
-	.blog__info {
-		padding-block: 2.5rem;
+	.post__info {
+		padding-block-start: 2.5rem;
 	}
 }
 </style>

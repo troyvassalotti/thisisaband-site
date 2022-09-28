@@ -1,8 +1,9 @@
 ---
 author: Troy
 title: Edamame
-date: 2021-06-22T00:00:00-04:00
+date: 2021-06-22
 hero_image: "/edamame-update.jpg"
+tags: ["single"]
 ---
 
 > Songs to help you float.

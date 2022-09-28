@@ -1,8 +1,9 @@
 ---
 author: Troy
 title: Lower Lands
-date: 2022-02-05T00:00:00-05:00
+date: 2022-02-05
 hero_image: "/lowerlands.jpg"
+tags: ["single"]
 ---
 
 I had a hard time preparing for this article. No, not because it was emotionally draining or anything, but because how do you write about a band that barely exists on the internet?

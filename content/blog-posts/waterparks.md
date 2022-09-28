@@ -1,8 +1,9 @@
 ---
 author: Troy
 title: Waterparks
-date: 2021-11-14T00:00:00-05:00
+date: 2021-11-14
 hero_image: "/waterparks.jpg"
+tags: ["single"]
 ---
 
 My fiancee and I saw Waterparks at The Fillmore Silver Spring the other night and they put on such a good show that they've officially become **her favorite band**. It was never going to be easy dethroning Good Charlotte in that position, but these three fools did it in a single night. If that isn't getting the point across about how good they are, then I don't know what will. This blog post may as well not exist if those words carried no weight.
