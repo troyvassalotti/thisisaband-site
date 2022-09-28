@@ -12,7 +12,7 @@
 		"format": "npx prettier --write ."
 	},
 	"dependencies": {
-		"frontmatter-markdown-loader": "^1.8.0",
+		"frontmatter-markdown-loader": "^3.7.0",
 		"nuxt": "^2.15.6"
 	},
 	"devDependencies": {
