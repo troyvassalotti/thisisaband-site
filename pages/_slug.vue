@@ -127,7 +127,9 @@ export default {
 
 <style scoped>
 .post__hero {
-	max-block-size: 300px;
+	--max-image-size: 300px;
+
+	block-size: min(100vh, var(--max-image-size));
 	object-fit: cover;
 }
 
@@ -140,7 +142,6 @@ export default {
 .post__info {
 	padding-block-end: 1rem;
 	padding-block-start: 1.5rem;
-	padding-inline: 1.5rem;
 	text-align: center;
 }
 
@@ -163,7 +164,7 @@ export default {
 
 @media (min-width: 768px) {
 	.post__hero {
-		min-block-size: 600px;
+		--max-image-size: 600px;
 	}
 
 	.post__info {
