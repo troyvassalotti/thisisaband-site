@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-	<section class="form-wrapper">
+	<section class="form-wrapper flow">
 		<h3>Want to submit a band?</h3>
 		<p>
 			Use this form to submit a band to the site. You don't have to give me a name or email, but by
@@ -21,26 +21,30 @@ export default {
 			<a href="https://github.com/troyvassalotti/thisisaband-site/issues">filing an issue</a>.
 		</p>
 		<form
-			class="submission"
+			class="submission-form flow"
 			method="POST"
 			name="Band Submission"
 			data-netlify="true"
 			data-netlify-honeypot="bot-field">
 			<input type="hidden" name="form-name" value="Band Submission" />
-			<label style="display: none">Don’t fill this out: <input name="bot-field" /></label>
-			<label for="name"
-				>Name (optional)<input id="name" name="name" placeholder="Cool Person" type="text"
-			/></label>
-			<label for="email"
-				>Email (optional)<input id="email" name="email" type="email" placeholder="you@are.cool"
-			/></label>
-			<label for="submission"
-				>Submission<textarea
+			<label style="display: none">Don't fill this out: <input name="bot-field" /></label>
+			<div class="form-field">
+				<label for="name">Name (optional)</label>
+				<input id="name" name="name" placeholder="Cool Person" type="text" />
+			</div>
+			<div class="form-field">
+				<label for="email">Email (optional)</label>
+				<input id="email" name="email" type="email" placeholder="you@are.cool" />
+			</div>
+			<div class="form-field">
+				<label for="submission">Submission</label>
+				<textarea
 					id="submission"
 					name="submission"
 					required
-					placeholder="Please don't write a novel."></textarea>
-			</label>
+					placeholder="Please don't write a novel."
+					rows="10"></textarea>
+			</div>
 			<input id="submit" type="submit" value="Submit" />
 		</form>
 	</section>
@@ -48,36 +52,29 @@ export default {
 
 <style scoped>
 .form-wrapper {
-	--spacing: 1ch;
 	margin-block-start: 2rem;
 }
 
-h3 {
-	margin-block: revert;
+.submission-form {
+	--spacing: 1ch;
 }
 
-form {
+.submission-form .form-field {
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing);
-}
-
-label {
-	display: flex;
-	flex-direction: column;
 	margin-block: var(--spacing);
 }
 
-input {
+.submission-form input {
 	padding: var(--spacing);
 }
 
-#submission {
-	block-size: 10em;
+.submission-form #submit {
+	cursor: pointer;
 }
 
-#submit {
-	cursor: pointer;
-	inline-size: max-content;
+.submission-form :is(input:not([type="submit"]), textarea) {
+	box-shadow: 1px 1px 1px currentColor;
 }
 </style>

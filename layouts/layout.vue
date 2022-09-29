@@ -1,10 +1,8 @@
 <template>
-	<section class="layout">
+	<div class="layout">
 		<Header :is-info-page="isInfoPage" />
-		<div class="content">
-			<nuxt />
-		</div>
-	</section>
+		<nuxt />
+	</div>
 </template>
 
 <script>

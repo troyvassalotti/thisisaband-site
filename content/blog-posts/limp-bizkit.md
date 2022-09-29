@@ -56,6 +56,4 @@ I am unabashedly a Limp Bizkit fan and sad I became one just in time to miss the
 
 ### Favorites Playlist
 
-I made a playlist of my favorite tracks, so check it out if you're interested.
-
 <iframe class="playlist-embed" title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/10505010382" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>

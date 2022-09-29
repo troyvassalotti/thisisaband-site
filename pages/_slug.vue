@@ -83,15 +83,14 @@ export default {
 
 <template>
 	<article class="post">
-		<div class="post__hero">
-			<img
-				:src="post.attributes.hero_image"
-				:alt="post.attributes.title"
-				width="1332"
-				height="600"
-				loading="eager"
-				decoding="async" />
-		</div>
+		<img
+			class="post__hero"
+			:src="post.attributes.hero_image"
+			:alt="post.attributes.title"
+			width="1332"
+			height="600"
+			loading="eager"
+			decoding="async" />
 		<section class="post__content flow">
 			<header class="post__info flow">
 				<h2>This is: {{ post.attributes.title }}.</h2>
@@ -128,11 +127,7 @@ export default {
 
 <style scoped>
 .post__hero {
-	min-block-size: 300px;
-}
-
-.post__hero img {
-	min-block-size: 100%;
+	max-block-size: 300px;
 	object-fit: cover;
 }
 
@@ -168,7 +163,7 @@ export default {
 
 @media (min-width: 768px) {
 	.post__hero {
-		min-height: 600px;
+		min-block-size: 600px;
 	}
 
 	.post__info {

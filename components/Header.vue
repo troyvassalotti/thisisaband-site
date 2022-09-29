@@ -14,9 +14,9 @@ export default {
 <template>
 	<header class="header">
 		<nav class="nav">
-			<NuxtLink to="/">
-				<h1>This is a Band</h1>
-			</NuxtLink>
+			<h1>
+				<NuxtLink to="/">This is a Band</NuxtLink>
+			</h1>
 			<div>
 				<h2>
 					<NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
@@ -33,7 +33,9 @@ a {
 }
 
 .nav {
-	align-items: center;
+	--item-alignment: center;
+
+	align-items: var(--item-alignment);
 	border-bottom: 1px solid var(--border-color);
 	display: flex;
 	justify-content: space-between;
@@ -41,19 +43,21 @@ a {
 }
 
 @media (min-width: 768px) {
+	/* Keeps the header in view while scrolling */
 	.header {
 		block-size: 100vh;
+		inset-block-start: 0;
 		position: sticky;
-		top: 0;
 	}
 
+	/* Turn the navigation into a column */
 	.nav {
-		align-items: flex-start;
+		--item-alignment: flex-start;
+
 		block-size: 100%;
 		border-bottom: none;
 		border-right: 1px solid var(--border-color);
 		flex-direction: column;
-		padding: 2rem;
 	}
 }
 </style>

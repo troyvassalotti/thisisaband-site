@@ -73,6 +73,12 @@ ol[role="list"] {
 	padding: 0;
 }
 
+/* Make summary look and feel like a button */
+summary {
+	cursor: pointer;
+	inline-size: fit-content;
+}
+
 /* Create equal spacing between elements in a flow context without setting display */
 .flow > * + * {
 	margin-block-start: var(--flow-space, 1.45em);
