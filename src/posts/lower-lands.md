@@ -2,11 +2,13 @@
 author: Troy
 title: Lower Lands
 date: 2022-02-05
-hero_image: "/lowerlands.jpg"
+hero_image: "lowerlands.jpg"
 tags: ["single"]
 ---
 
 I had a hard time preparing for this article. No, not because it was emotionally draining or anything, but because how do you write about a band that barely exists on the internet?
+
+<!-- excerpt -->
 
 When Lower Lands put out their EP _Growing Pains_ in 2012, I was all in. I can't remember if the _Reality in Routine_ music video was my first introduction to them, but it's what I still go back to these days. You know why? Because YouTube is the only place you can listen to them.
 

@@ -2,11 +2,15 @@
 author: Troy
 title: Limp Bizkit
 date: 2022-09-27
-hero_image: "/limp-bizkit.webp"
+hero_image: "limp-bizkit.webp"
 tags: ["discography"]
 ---
 
-I don't know exactly what compelled me to make this decision, but I started July off with the intent to listen through Limp Bizkit's entire discography. All I knew about LB were a few things:
+I don't know exactly what compelled me to make this decision, but I started July off with the intent to listen through Limp Bizkit's entire discography.
+
+<!-- excerpt -->
+
+All I knew about LB were a few things:
 
 - They wrote "Nookie" and "Rollin'"
 - Fred Durst (and the band itself) is the butt of a lot of jokes
