@@ -23,12 +23,10 @@
 	<meta name="og:title" content="{{ title }}">
 	<meta name="og:description" content="{{ pageDescription }}">
 	<meta name="og:site_name" content="{{ metadata.domain }}">
-	<meta name="og:image" content="{{ hero_image | url }}">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="{{ hero_image | url }}">
+	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="{{ title }}">
 	<meta name="twitter:description" content="{{ pageDescription }}">
-	<meta name="twitter:creator" content="{{ metadata.handles.twitter }}">
+	<meta name="twitter:creator" content="@{{ metadata.handles.twitter }}">
 	<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
 
 	<!-- Other Head Stuff -->
@@ -50,7 +48,7 @@
 	<div class="layout">
 		<header class="site-header">
 			<nav class="site-nav" aria-label="primary">
-				{% if page.fileSlug = "/" %}
+				{% if page.fileSlug === "" %}
 					<h1>
 						<a href="/">{{ metadata.title }}</a>
 					</h1>
@@ -60,7 +58,7 @@
 					</p>
 				{% endif %}
 				<h2>
-				{% if page.fileSlug = "/info/" %}
+				{% if page.fileSlug === "/info/" %}
 					<a href="/">close</a>
 				{% else %}
 					<a href="/info/">info</a>

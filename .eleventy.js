@@ -2,9 +2,13 @@
  * @file Site configuration
  * Most site features are configured in /utils/
  */
+ const pluginRss = require("@11ty/eleventy-plugin-rss");
  const srcDir = `./src`;
  
  module.exports = function (config) {
+	// Plugins
+	config.addPlugin(pluginRss);
+
    // Passthroughs
    config
 	 .addPassthroughCopy(`${srcDir}/favicon.ico`)

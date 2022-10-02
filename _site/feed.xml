@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>thisisa.band</title>
+  <subtitle>A blog written by the people who like bands for the people who like bands.</subtitle>
+  <link href="https://www.thisisa.band/feed.xml" rel="self"/>
+  <link href="https://www.thisisa.band/"/>
+  <updated>2022-10-02T13:00:01Z</updated>
+  <id>https://www.thisisa.band/</id>
+  <author>
+    <name>Troy Vassalotti</name>
+    <email>contact@thisisa.band</email>
+  </author>
+  
+</feed>
