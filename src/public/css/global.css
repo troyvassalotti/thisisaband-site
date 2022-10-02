@@ -1,0 +1,229 @@
+html {
+	--border-color: hsl(0, 0%, 50%, 0.5);
+
+	color-scheme: light dark;
+	overflow-wrap: break-word;
+}
+
+a {
+	transition: opacity 0.2s ease;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+.video-embed,
+.playlist-embed {
+	margin-block: clamp(1ex, 5vw, 6ex);
+}
+
+.video-embed iframe {
+	aspect-ratio: 16 / 9;
+	block-size: 100%;
+	inline-size: 100%;
+}
+
+blockquote {
+	padding: 1rem;
+}
+
+blockquote:not(.post__category-description) {
+	border-inline-start: 1px solid var(--border-color);
+}
+
+blockquote.post__category-description {
+	border: 1px solid currentColor;
+	box-shadow: 5px 5px 0 0 currentColor;
+}
+
+blockquote p {
+	font-style: italic;
+}
+
+/*
+ * POST
+ * LISTING
+ */
+/* The link that wraps the post card */
+.post-list__link {
+	--flow-space: 1ch;
+
+	border-block-end: 1px solid var(--border-color);
+	color: inherit;
+	opacity: inherit;
+	/* Prevent horizontal scrollbar on hover animation */
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.hero_image {
+	min-block-size: 100%;
+	min-inline-size: 100%;
+	min-block-size: 33.333vh;
+	object-fit: cover;
+	object-position: center;
+	transition: opacity 0.3s ease;
+}
+
+/* Adjust appearance of only the hero image when the card is hovered */
+.post-list__link:hover .hero_image {
+	opacity: 0.8;
+}
+
+.post-list__info {
+	padding-block: 2rem;
+	padding-inline: 1.5rem;
+}
+
+/*
+ * SITE
+ * NAVIGATION
+ */
+.site-nav {
+	--item-alignment: center;
+
+	align-items: var(--item-alignment);
+	border-block-end: 1px solid var(--border-color);
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.site-nav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-nav .title {
+	display: flex;
+}
+
+.site-nav .title-text {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.rss {
+	inline-size: 1.5rem;
+	margin-inline-start: 1rem;
+}
+
+/* Info Page */
+.info-wrapper {
+	max-inline-size: 800px;
+	padding: 1.5rem;
+}
+
+/*
+ * POST
+ * PAGE
+ */
+.post__hero {
+	--max-image-size: 300px;
+
+	block-size: min(100vh, var(--max-image-size));
+	object-fit: cover;
+}
+
+.post__content {
+	margin-inline: auto;
+	max-inline-size: 800px;
+	padding-inline: 1.5rem;
+}
+
+.post__info {
+	padding-block-end: 1rem;
+	padding-block-start: 1.5rem;
+	text-align: center;
+}
+
+.post__footer {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.25rem;
+}
+
+.post__footer a {
+	color: inherit;
+}
+
+.post__footer a svg {
+	fill: currentColor;
+	inline-size: 20px;
+	stroke: currentColor;
+}
+
+/*
+ * SUBMISSION
+ * FORM
+ */
+.submission-form {
+	--spacing: 1ch;
+}
+
+.submission-form .form-field {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+	margin-block: var(--spacing);
+}
+
+.submission-form input {
+	padding: var(--spacing);
+}
+
+.submission-form #submit {
+	cursor: pointer;
+}
+
+.submission-form :is(input:not([type="submit"]), textarea) {
+	box-shadow: 1px 1px 1px currentColor;
+}
+
+@media (min-width: 768px) {
+	.layout {
+		display: grid;
+		grid-template-columns: 30vw 1fr;
+	}
+
+	/* Keeps the header in view while scrolling */
+	.site-header {
+		block-size: 100vh;
+		inset-block-start: 0;
+		position: sticky;
+	}
+
+	/* Turn the navigation into a column */
+	.site-nav {
+		--item-alignment: flex-start;
+
+		block-size: 100%;
+		border-block-end: none;
+		border-inline-end: 1px solid var(--border-color);
+		flex-direction: column;
+	}
+
+	.post-list__link {
+		display: grid;
+		grid-template-columns: 30% 1fr;
+		align-items: center;
+	}
+
+	.post-list__info {
+		transition: transform 0.5s ease-out;
+	}
+
+	.post-list__link:hover .post-list__info {
+		transform: translateX(10px);
+	}
+
+	.post__hero {
+		--max-image-size: 600px;
+	}
+
+	.post__info {
+		padding-block-start: 2.5rem;
+	}
+}

@@ -86,3 +86,6 @@ sw.*
 
 # Mac OSX
 .DS_Store
+
+# Eleventy
+_site
