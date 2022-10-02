@@ -95,9 +95,18 @@ blockquote p {
 	text-decoration: none;
 }
 
-.site-nav :first-child {
+.site-nav .title {
+	display: flex;
+}
+
+.site-nav .title-text {
 	font-size: 1.5rem;
 	font-weight: bold;
+}
+
+.rss {
+	inline-size: 1.5rem;
+	margin-inline-start: 1rem;
 }
 
 /* Info Page */
