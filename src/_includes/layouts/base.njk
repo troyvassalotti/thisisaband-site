@@ -5,15 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title | safe }} | {{ metadata.branding }}</title>
 
-	<meta name="description" content="{{ description }}">
+	<link href="/public/css/modern-reset.css" rel="stylesheet">
+	<link href="/public/css/global.css" rel="stylesheet">
+
+	{%- set pageDescription -%}
+		{%- if description -%}
+			{{ description | safe }}
+		{%- elseif excerpt -%}
+			{{ excerpt | safe }}
+		{%- else -%}
+			{{ title | safe }} | a page on {{ metadata.domain }}: {{ metadata.description }}
+		{%- endif -%}
+	{%- endset -%}
+	<meta name="description" content="{{ pageDescription }}">
 	<meta name="og:locale" content="en_US">
 	<meta name="og:type" content="article">
 	<meta name="og:title" content="{{ title }}">
-	<meta name="og:description" content="{{ description }}">
+	<meta name="og:description" content="{{ pageDescription }}">
 	<meta name="og:site_name" content="{{ metadata.domain }}">
-	<meta name="twitter:card" content="summary">
+	<meta name="og:image" content="{{ hero_image | url }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="{{ hero_image | url }}">
 	<meta name="twitter:title" content="{{ title }}">
-	<meta name="twitter:description" content="{{ description }}">
+	<meta name="twitter:description" content="{{ pageDescription }}">
 	<meta name="twitter:creator" content="{{ metadata.handles.twitter }}">
 	<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
 
@@ -33,6 +47,30 @@
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-	
+	<div class="layout">
+		<header class="site-header">
+			<nav class="site-nav" aria-label="primary">
+				{% if page.fileSlug = "/" %}
+					<h1>
+						<a href="/">{{ metadata.title }}</a>
+					</h1>
+				{% else %}
+					<p>
+						<a href="/">{{ metadata.title }}</a>
+					</p>
+				{% endif %}
+				<h2>
+				{% if page.fileSlug = "/info/" %}
+					<a href="/">close</a>
+				{% else %}
+					<a href="/info/">info</a>
+				{% endif %}
+				</h2>
+			</nav>
+		</header>
+		<main id="main">
+			{{ content | safe }}
+		</main>
+	</div>
 </body>
 </html>

@@ -1,5 +1,21 @@
 {
 	"title": "This is a Band",
 	"description": "A blog written by the people who like bands for the people who like bands.",
-	"branding": "thisisa.band"
+	"branding": "thisisa.band",
+	"domain": "www.thisisa.band",
+	"url": "https://www.thisisa.band",
+	"repo": "https://github.com/troyvassalotti/thisisaband-site",
+	"handles": {
+		"twitter": "@validcharacters"
+	},
+	"rss": {
+		"title": "thisisa.band",
+		"subtitle": "A blog written by the people who like bands for the people who like bands.",
+		"url": "https://www.thisisa.band/",
+		"feedUrl": "https://www.thisisa.band/feed.xml",
+		"author": {
+			"name": "Troy Vassalotti",
+			"email": "contact@thisisa.band"
+		}
+	}
 }
