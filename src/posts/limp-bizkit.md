@@ -60,4 +60,4 @@ I am unabashedly a Limp Bizkit fan and sad I became one just in time to miss the
 
 ### Favorites Playlist
 
-<iframe class="playlist-embed" title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/10505010382" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+{% deezer "10505010382" %}

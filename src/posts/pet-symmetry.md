@@ -18,7 +18,7 @@ Pet Symmetry is the trio of Erik Czaja, Marcus Nuccio, and Evan Thomas Weiss, an
 
 The production is top-notch; the hooks are clean as hell (who decided hell was a clean place?); and they cover such a wide range of sounds. If you're able to get through the music video for "2021: A Personal Space Odyssey" without feeling the most pumped you've ever been, then I commend you.
 
-<div class="video-embed"><iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/B2nXcWyBYdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% youtube "B2nXcWyBYdE" %}
 
 Listening to Pet Symmetry has influenced my own writing by showing me a way to be lighthearted-yet-sincere in my music - both instrumentally and lyrically. I'm by no means a lyric writer, but I've moved on from that notion that I have to be _going through something_ to write a song; a song could be about what's going on _at this moment_ and not be a depressing diary entry.
 

@@ -1,0 +1,27 @@
+<form
+	class="submission-form flow"
+	method="POST"
+	name="Band Submission"
+	data-netlify="true"
+	data-netlify-honeypot="bot-field">
+	<input type="hidden" name="form-name" value="Band Submission" />
+	<label style="display: none">Don't fill this out: <input name="bot-field" /></label>
+	<div class="form-field">
+		<label for="name">Name (optional)</label>
+		<input id="name" name="name" placeholder="Cool Person" type="text" />
+	</div>
+	<div class="form-field">
+		<label for="email">Email (optional)</label>
+		<input id="email" name="email" type="email" placeholder="you@are.cool" />
+	</div>
+	<div class="form-field">
+		<label for="submission">Submission</label>
+		<textarea
+			id="submission"
+			name="submission"
+			required
+			placeholder="Please don't write a novel."
+			rows="10"></textarea>
+	</div>
+	<input id="submit" type="submit" value="Submit" />
+</form>

@@ -20,4 +20,4 @@ Waterparks experiments with styles I'm not used to hearing on a rock album nowad
 
 If there's only one song to take away from here, I'll say it's _Numb_ (music video below) because it is a catchy-yet-powerful track with an ending that explodes into layers you didn't see coming. My only complaint is that they don't toy with that outro for longer.
 
-<div class="video-embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Yr-kFHJGfOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+{% youtube "Yr-kFHJGfOA" %}

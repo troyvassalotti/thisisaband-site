@@ -1,0 +1,21 @@
+<!-- prettier-ignore -->
+<header class="site-header">
+	<nav class="site-nav" aria-label="primary">
+		{% if page.fileSlug === "" %}
+		<h1>
+			<a href="/">{{ metadata.title }}</a>
+		</h1>
+		{% else %}
+		<p>
+			<a href="/">{{ metadata.title }}</a>
+		</p>
+		{% endif %}
+		<h2>
+			{% if page.fileSlug === "info" %}
+				<a href="/">close</a>
+			{% else %}
+				<a href="/info/">info</a>
+			{% endif %}
+		</h2>
+	</nav>
+</header>

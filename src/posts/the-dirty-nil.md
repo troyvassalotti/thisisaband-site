@@ -16,6 +16,6 @@ It's hard to describe how this album makes you feel simultaneously like you just
 
 It actually took me a while to appreciate what these guys were doing. I first heard about them (I think) from their [session on Audiotree](https://audiotree.tv/session/the-dirty-nil/). I was immediately hooked and dove into that first album, but it was a short-lived romance likely as a result of the tumultuous time that is _college_. But when I heard "Done With Drugs" as a single for _Fuck Art_, I revisited the catalogue and saw what my life had been missing this whole time.
 
-<div class="video-embed"> <iframe width="560" loading="lazy" height="315" src="https://www.youtube-nocookie.com/embed/SQCvnxikK9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+{% youtube "SQCvnxikK9Y" %}
 
 Just give that a listen and tell me I'm wrong. And when you're done with that, [dive into the full album](https://go.thedirtynil.com/FArt) because it's worth every repeated listen.

@@ -5,15 +5,23 @@ layout: base
 
 <ul class="post-list" role="list">
 	{% for post in collections.post | reverse %}
-		<li>
-			<a class="post-list__link" href="{{ post.url }}">
-				<img class="hero_image" src="{{ post.data.hero_image }}" alt="{{ post.data.title }}" width="400" height="250" loading="lazy" decoding="async" />
-				<div class="post-list__info flow">
-					<h2>{{ post.data.title }}</h2>
-					<p>{{ post.date }}</p>
-					<p>{{ post.data.excerpt or post.data.description | truncate(200) }}</p>
-				</div>
-			</a>
-		</li>
+	<li>
+		<a class="post-list__link" href="{{ post.url }}">
+			<img
+				class="hero_image"
+				src="/public/img/{{ post.data.hero_image }}"
+				alt="{{ post.data.title }}"
+				width="400"
+				height="250"
+				loading="lazy"
+				decoding="async" />
+			<div class="post-list__info flow">
+				<h2>{{ post.data.title }}</h2>
+				<p>{{ post.date | dateString }}</p>
+				{% set postExcerpt = post.data.excerpt or post.data.description %}
+				<p>{{ postExcerpt | truncate(200) }}</p>
+			</div>
+		</a>
+	</li>
 	{% endfor %}
 </ul>

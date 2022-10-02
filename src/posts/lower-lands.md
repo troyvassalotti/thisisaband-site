@@ -20,7 +20,7 @@ Your favorite (and least favorite) streaming services don't know they exist. At 
 
 But don't just take my word for it; here's that music video I talked about:
 
-<div class="video-embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q3wWuqr9rYw" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+{% youtube "q3wWuqr9rYw" %}
 
 It's become a complicated hassle to listen to music _not on_ a subscription streaming service. Like I said, I have a handful of their EPs and my only option is to play them directly from local storage, but even that involves either syncing my music library across devices (_way too many gigs to do that_) or purposefully loading these tracks on my phone, laptop, etc.
 
