@@ -1,7 +1,13 @@
-/* Use a more-intuitive box-sizing model */
+/**
+ * Use a more-intuitive box-sizing model
+ *
+ * @format
+ */
+
 html {
-	--system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	--system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
 
 	box-sizing: border-box;
 }

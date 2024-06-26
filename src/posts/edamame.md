@@ -6,6 +6,8 @@ hero_image: "edamame-update.jpg"
 tags: ["single"]
 ---
 
+<!-- @format -->
+
 > Songs to help you float.
 
 <!-- excerpt -->

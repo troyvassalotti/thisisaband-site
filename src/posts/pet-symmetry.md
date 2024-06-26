@@ -6,6 +6,8 @@ hero_image: "pet-symmetry.jpg"
 tags: ["single"]
 ---
 
+<!-- @format -->
+
 Discovering a new band or genre has often led to defining moments in my life.
 
 <!-- excerpt -->

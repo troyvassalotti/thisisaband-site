@@ -19,7 +19,7 @@ layout: base
 				<h2>{{ post.data.title }}</h2>
 				<p>{{ post.date | dateString }}</p>
 				{% set postExcerpt = post.data.excerpt or post.data.description %}
-				<p>{{ postExcerpt | truncate(200) }}</p>
+				<p>{{ postExcerpt | truncate(200) | safe }}</p>
 			</div>
 		</a>
 	</li>

@@ -18,9 +18,8 @@ layout: base
 			{% if "discography" in tags %}
 			<blockquote class="post__category-description">
 				<p>
-					This post is part of a series where I listen through a band's full discography and talk
-					about that journey. If you're only interested in my final thoughts and the resulting
-					playlist I made, skip to the end of the article.
+					This post is part of a series where I listen through a band's full
+					discography and talk about that journey.
 				</p>
 			</blockquote>
 			{% endif %}
@@ -32,7 +31,9 @@ layout: base
 			{% set nextPost = collections.post | getNextCollectionItem(page) %}
 			{% set previousPost = collections.post | getPreviousCollectionItem(page) %}
 			{% if previousPost %}
-			<a href="{{ previousPost.url | url }}" aria-label="previous post">
+			<a
+				href="{{ previousPost.url | url }}"
+				aria-label="previous post">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					version="1.1"

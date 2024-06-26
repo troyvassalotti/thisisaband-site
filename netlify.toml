@@ -1,18 +1,18 @@
 [build]
-    command = "npm run build"
-    publish = "_site"
+command = "npm run build"
+publish = "_site"
 
 # Redirect from the default Netlify site to my custom domain
 [[redirects]]
-    from = "https://thisisaband.netlify.app/*"
-    to = "https://www.thisisa.band/:splat"
-    status = 301
-    force = true
+from = "https://thisisaband.netlify.app/*"
+to = "https://www.thisisa.band/:splat"
+status = 301
+force = true
 
 # Custom headers
 [[headers]]
-    for = "/*"
-    [headers.values]
-        X-Content-Type-Options = "nosniff"
-        X-Frame-Options = "SAMEORIGIN"
-        X-XSS-Protection = "1"
+for = "/*"
+[headers.values]
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "SAMEORIGIN"
+X-XSS-Protection = "1"

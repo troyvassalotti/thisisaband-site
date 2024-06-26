@@ -6,6 +6,8 @@ hero_image: "korn.webp"
 tags: ["discography"]
 ---
 
+<!-- @format -->
+
 Immediately after spending ingesting 100% Limp Bizkit through my ears, I thought 14 straight albums of Korn would be fine. And it was! Korn is great! Most of the time, that is.
 
 <!-- excerpt -->

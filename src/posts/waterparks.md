@@ -6,6 +6,8 @@ hero_image: "waterparks.jpg"
 tags: ["single"]
 ---
 
+<!-- @format -->
+
 My fiancee and I saw Waterparks at The Fillmore Silver Spring the other night and they put on such a good show that they've officially become **her favorite band**. It was never going to be easy dethroning Good Charlotte in that position, but these three fools did it in a single night.
 
 <!-- excerpt -->

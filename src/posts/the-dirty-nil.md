@@ -6,6 +6,8 @@ hero_image: "dirtynil-1.jpg"
 tags: ["single"]
 ---
 
+<!-- @format -->
+
 You know that feeling of a cool, summer breeze after a long day of suffering through the existence that is life? Well, imagine that except with a sudden urge to punch a wall out of sheer enjoyment.
 
 <!-- excerpt -->

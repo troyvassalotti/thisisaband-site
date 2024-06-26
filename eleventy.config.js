@@ -1,10 +1,12 @@
 /**
+ * @format
  * @file Site configuration
  */
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+import pluginRss from "@11ty/eleventy-plugin-rss";
 const srcDir = `./src`;
 
-module.exports = function (config) {
+export default function (config) {
 	// Plugins
 	config.addPlugin(pluginRss);
 
@@ -36,13 +38,13 @@ module.exports = function (config) {
 	config.addNunjucksShortcode("deezer", (id) => {
 		return `<iframe class="playlist-embed" title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/${id}" width="100%" height="420" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`;
 	});
+}
 
-	return {
-		htmlTemplateEngine: "njk",
-		markdownTemplateEngine: "njk",
-		dir: {
-			input: "src",
-			layouts: "_includes/layouts",
-		},
-	};
+export const config = {
+	htmlTemplateEngine: "njk",
+	markdownTemplateEngine: "njk",
+	dir: {
+		input: "src",
+		layouts: "_includes/layouts",
+	},
 };

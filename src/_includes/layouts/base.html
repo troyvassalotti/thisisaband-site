@@ -1,0 +1,150 @@
+<!doctype html>
+<html
+	lang="en-US"
+	dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>{{ title | safe }} | {{ metadata.branding }}</title>
+
+		<link
+			href="/public/css/modern-reset.css"
+			rel="stylesheet" />
+		<link
+			href="/public/css/global.css"
+			rel="stylesheet" />
+
+		<!-- prettier-ignore -->
+		{% set pageDescription %}
+			{% if description %} {{ description | safe }} {% elseif excerpt %} {{ excerpt | safe }} {% else %} {{ title | safe }} | a page on {{ metadata.domain }}: {{
+		metadata.description }}
+			{% endif %}
+		{% endset %}
+		<meta
+			name="description"
+			content="{{ pageDescription }}" />
+		<meta
+			name="og:locale"
+			content="en_US" />
+		<meta
+			name="og:type"
+			content="article" />
+		<meta
+			name="og:title"
+			content="{{ title }}" />
+		<meta
+			name="og:description"
+			content="{{ pageDescription }}" />
+		<meta
+			name="og:site_name"
+			content="{{ metadata.domain }}" />
+		<meta
+			name="twitter:card"
+			content="summary" />
+		<meta
+			name="twitter:title"
+			content="{{ title }}" />
+		<meta
+			name="twitter:description"
+			content="{{ pageDescription }}" />
+		<link
+			rel="canonical"
+			href="{{ metadata.url }}{{ page.url }}" />
+
+		<!-- Other Head Stuff -->
+		<meta
+			name="generator"
+			content="{{ eleventy.generator }}" />
+		<link
+			rel="author"
+			href="/humans.txt" />
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			href="/feed.xml"
+			title="RSS Feed" />
+
+		<!-- Web Monetization -->
+		<meta
+			name="monetization"
+			content="$ilp.uphold.com/XqbEkDnhpZ29" />
+		<link
+			rel="monetization"
+			href="https://ilp.uphold.com/XqbEkDnhpZ29" />
+
+		<!-- Icons and other PWA Stuff -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/public/favicons/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/public/favicons/favicon-16x16.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/public/favicons/apple-touch-icon.png" />
+		<link
+			rel="manifest"
+			href="/site.webmanifest" />
+	</head>
+	<body>
+		<div class="layout">
+			<header class="site-header">
+				<nav
+					class="site-nav"
+					aria-label="primary">
+					<div class="title">
+						{% if page.fileSlug === "" %}
+						<h1 class="title-text">
+							<a href="/">{{ metadata.title }}</a>
+						</h1>
+						{% else %}
+						<p class="title-text">
+							<a href="/">{{ metadata.title }}</a>
+						</p>
+						{% endif %}
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							aria-label="RSS"
+							role="img"
+							viewBox="0 0 512 512"
+							class="rss">
+							<a xlink:href="/feed.xml">
+								<rect
+									width="512"
+									height="512"
+									rx="15%"
+									fill="#000" />
+								<circle
+									cx="145"
+									cy="367"
+									r="35"
+									fill="#fff" />
+								<path
+									fill="none"
+									stroke="#fff"
+									stroke-width="60"
+									d="M109 241c89 0 162 73 162 162m114 0c0-152-124-276-276-276" />
+							</a>
+						</svg>
+					</div>
+					<h2>
+						{% if page.fileSlug === "info" %}
+						<a href="/">close</a>
+						{% else %}
+						<a href="/info/">info</a>
+						{% endif %}
+					</h2>
+				</nav>
+			</header>
+			<main id="main">{{ content | safe }}</main>
+		</div>
+	</body>
+</html>

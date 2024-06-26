@@ -6,6 +6,8 @@ labels: Submission
 assignees: troyvassalotti
 ---
 
+<!-- @format -->
+
 **Band/Artist Name:**
 
 **Link to a song or stream I can embed:**

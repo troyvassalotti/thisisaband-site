@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # This is a Band
 
 > Template is forked from Brevifolia by Kendall Strautman, originally a minimalist blog starter using [Forestry](https://forestry.io/) with [Nuxt](https://nuxtjs.org/) (demo [here](https://brevifolia-nuxt-forestry.netlify.com/)).

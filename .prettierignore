@@ -1,5 +1,2 @@
-# Broken syntax according to Prettier
-src/_includes/partials/header.html
-
-# Output
+*.html
 _site

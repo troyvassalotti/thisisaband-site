@@ -6,6 +6,8 @@ hero_image: "limp-bizkit.webp"
 tags: ["discography"]
 ---
 
+<!-- @format -->
+
 I don't know exactly what compelled me to make this decision, but I started July off with the intent to listen through Limp Bizkit's entire discography.
 
 <!-- excerpt -->
