@@ -89,3 +89,5 @@ sw.*
 
 # Eleventy
 _site
+# Local Netlify folder
+.netlify

@@ -5,6 +5,9 @@
 	"scripts": {
 		"dev": "npx @11ty/eleventy --serve --incremental",
 		"build": "npx @11ty/eleventy",
+		"clean": "rm -rf _site",
+		"deploy": "netlify deploy --prod",
+		"predeploy": "npm run clean",
 		"format": "npx prettier --write .",
 		"start": "npm run dev"
 	},
